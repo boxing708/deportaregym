@@ -1,9 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>デポルターレジム</title>
+    <meta name="description" content="ページの説明" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="" />
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="icon" type="image/png" sizes="16x16" href="" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="デポルターレジム" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="デポルターレジム" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="URL" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- <meta property="fb:app_id" content="AppID"> -->
+    <meta name="twitter:card" content="summary_large_image or summary" />
+
+    <!-- <meta name="twitter:site" content="@moshamusha2010" /> -->
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL" />
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header__container">
+        <div>
+          <a href="assets/images/common/logo/logo.png" class="header__link"
+            ><img
+              src="assets/images/common/logo/logo.png"
+              alt=""
+              class="header__logo"
+          /></a>
+        </div>
+        <button class="header__burger" id="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Home</span
+                ><span class="header__item-ja">ホーム</span></a
+              >
+            </li>
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">About us</span
+                ><span class="header__item-ja"
+                  >デポルターレジムについて</span
+                ></a
+              >
+            </li>
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Price</span
+                ><span class="header__item-ja">入会・料金</span></a
+              >
+            </li>
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Trainer</span
+                ><span class="header__item-ja">トレーナー</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="mv">
+        <div class="mv__container">
+          <h1 class="mv__cp font__en">
+            Boxing <span class="sp-none">&</span> Martial Arts Gym
+          </h1>
+          <div class="mv__pic">
+            <img
+              src="assets/images/home/top-pic-pc.jpg"
+              alt="メインビジュアル画像"
+            />
+          </div>
+          <div class="mv__button">
+            <img src="assets/images/common/button/trail-button.png" alt="" />
+            <p class="mv__button_text">
+              <span class="mv__button_text01">無料体験</span
+              ><span class="mv__button_text02">入会申込</span
+              ><span class="mv__button_text03">はこちら</span>
+            </p>
+          </div>
+          <div class="mv__scroll"><span>scroll</span></div>
+        </div>
+      </section>
+      <section class="news"></section>
+      <section class="about"></section>
+      <section class="trial"></section>
+      <section class="categories"></section>
+      <section class="instagram"></section>
+      <section class="access"></section>
+    </main>
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

@@ -5,7 +5,7 @@ html {
   width: 100%;
 }
 body {
-  color: #333; /* RGB */
+  color: #000; /* RGB */
   font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック",
     "Yu Gothic", "メイリオ", sans-serif;
   font-weight: 500;
@@ -15,9 +15,12 @@ body {
 }
 img {
   width: 100%;
+  display: block;
+  object-fit: cover;
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 .none {
   display: none;
@@ -26,4 +29,7 @@ a {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+.font__en {
+  font-family: "Anton", sans-serif;
 }
