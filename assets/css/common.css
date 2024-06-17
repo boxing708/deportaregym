@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+}
+body {
+  color: #000; /* RGB */
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック",
+    "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 2.4rem;
+  /* text-align: center; */
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.none {
+  display: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.font__en {
+  font-family: "Anton", sans-serif;
+}
