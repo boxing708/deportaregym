@@ -72,7 +72,7 @@ header {
   .header__list {
     display: flex;
     -moz-column-gap: 55px;
-         column-gap: 55px;
+    column-gap: 55px;
   }
 }
 @media (width >= 768px) {
@@ -119,7 +119,7 @@ main {
 .mv__container .mv__pic img {
   height: 736px;
   -o-object-position: 84% 45%;
-     object-position: 84% 45%;
+  object-position: 84% 45%;
 }
 @media (width >= 768px) {
   .mv__container .mv__pic img {
@@ -145,4 +145,4 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
