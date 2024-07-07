@@ -5,7 +5,7 @@ html {
   width: 100%;
 }
 body {
-  color: #333; /* RGB */
+  color: #202020; /* RGB */
   font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック",
     "Yu Gothic", "メイリオ", sans-serif;
   font-weight: 500;
@@ -15,9 +15,15 @@ body {
 }
 img {
   width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 2px;
 }
 a {
   text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }
 .none {
   display: none;
@@ -26,4 +32,99 @@ a {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+.font__anton {
+  font-family: "Anton", sans-serif;
+}
+.font__roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.max-width {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.section__heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.section__heading-en {
+  font-size: 4.8rem;
+  letter-spacing: 0.12em;
+  color: #f1dc8d;
+  font-weight: 500;
+}
+.section__heading-ja {
+  position: relative;
+  font-size: 1.7rem;
+  top: -6px;
+  left: 1%;
+}
+/* ボタンmore */
+.button__more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  background: #e1c45f;
+  color: #fff;
+  border-radius: 1px;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+}
+.button__more-text {
+  margin-left: 32%;
+}
+.button__more-text::after {
+  position: absolute;
+  content: "";
+  top: 37%;
+  right: 16%;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .section__heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+  .section__heading-en {
+    font-size: 8rem;
+  }
+  .section__heading-ja {
+    position: relative;
+    font-size: 2.4rem;
+    top: 6px;
+  }
+  /* ボタンmore */
+  .button__more {
+    width: 170px;
+    height: 36px;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+  }
+  .button__more:hover {
+    border: 2px solid #e7cd71;
+    background-color: transparent;
+  }
+  .button__more:hover .button__more-text {
+    color: #e7cd71;
+  }
+  .button__more-text::after {
+    top: 39%;
+  }
+  .button__more:hover .button__more-text::after {
+    right: 10%;
+    border-top: 2px solid #e7cd71;
+    border-right: 2px solid #e7cd71;
+  }
 }
