@@ -52,9 +52,11 @@
     <header>
       <div class="header__container">
         <div>
-          <a href="assets/images/common/logo/logo.png" class="header__link"
+          <a
+            href="assets/images/common/logo/header-logo.png"
+            class="header__link"
             ><img
-              src="assets/images/common/logo/logo.png"
+              src="assets/images/common/logo/header-logo.png"
               alt=""
               class="header__logo"
           /></a>
@@ -99,35 +101,375 @@
     <main>
       <section class="mv">
         <div class="mv__container">
-          <h1 class="mv__cp font__en">
-            Boxing <span class="sp-none">&</span> Martial Arts Gym
+          <h1 class="mv__cp font__anton">
+            <span>Boxing & </span><br class="pc__none" /><span
+              >Martial Arts Gym</span
+            >
           </h1>
-          <div class="mv__pic">
-            <img
-              src="assets/images/home/top-pic-pc.jpg"
-              alt="メインビジュアル画像"
-            />
+          <div class="mv__video">
+            <video
+              src="assets/movie/mv-movie.mp4"
+              autoplay
+              muted
+              playsinline
+              loop
+            ></video>
           </div>
           <div class="mv__button">
-            <img src="assets/images/common/button/trail-button.png" alt="" />
-            <p class="mv__button_text">
+            <a href="" class="button__link"
+              ><img
+                src="assets/images/common/button/trial-button.png"
+                alt="無料体験ボタン"
+            /></a>
+
+            <!-- <p class="mv__button_text">
               <span class="mv__button_text01">無料体験</span
               ><span class="mv__button_text02">入会申込</span
               ><span class="mv__button_text03">はこちら</span>
-            </p>
+            </p> -->
           </div>
           <div class="mv__scroll"><span>scroll</span></div>
         </div>
       </section>
-      <section class="news"></section>
-      <section class="about"></section>
-      <section class="trial"></section>
-      <section class="categories"></section>
-      <section class="instagram"></section>
-      <section class="access"></section>
-    </main>
-    <footer></footer>
+      <section class="news">
+        <div class="news__container max-width">
+          <h2 class="section__heading">
+            <span class="section__heading-en font__anton">News</span>
+            <span class="section__heading-ja">お知らせ</span>
+          </h2>
 
+          <ul class="news__list">
+            <li class="news__item">
+              <span class="news__date">2023/07/01</span>
+              <p class="news__description">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">2023/07/01</span>
+              <p class="news__description">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">2023/07/01</span>
+              <p class="news__description">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">2023/07/01</span>
+              <p class="news__description">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">2023/07/01</span>
+              <p class="news__description">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </li>
+            <li class="news__item">
+              <span class="news__date">2023/07/01</span>
+              <p class="news__description">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </li>
+          </ul>
+          <!-- moreボタン -->
+          <a href="" class="button__more font__roboto"
+            ><span class="button__more-text">more</span></a
+          >
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container max-width">
+          <h2 class="section__heading">
+            <span class="section__heading-en font__anton">About Us</span>
+            <span class="section__heading-ja">デポルターレジムについて</span>
+          </h2>
+          <div class="about__inner">
+            <div class="about__pic">
+              <img
+                src="assets/images/home/about.jpg"
+                alt="デポルターレジムについての写真"
+              />
+            </div>
+            <div class="about__inner-right">
+              <p class="about__inner-text01">
+                デポルターレジムは2023年にオープンした東京都江東区北砂にある、ボクシング・キックボクシング・MMA（ストライキング）を主体とするジムです。ダイエット、健康維持、強くなりたい、試合してみたい、など様々な目的・用途で通っていただけます。
+              </p>
+              <p class="about__inner-text02">
+                多くの方に格闘技の楽しさを知ってもらいたいと思っており、トレーナー一同楽しく丁寧な指導を行っております。
+              </p>
+              <!-- moreボタン -->
+              <a href="" class="button__more font__roboto"
+                ><span class="button__more-text">more</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trial">
+        <div class="trial__container trial__pic">
+          <img
+            src="assets/images/common/trial/free-trial-sp.jpg"
+            alt="無料体験・入会申込の写真"
+            class="trial__pic-sp"
+          />
+          <img
+            src="assets/images/common/trial/free-trial-pc.jpg"
+            alt="無料体験・入会申込の写真"
+            class="trial__pic-pc"
+          />
+          <div class="trial__pic-bg"></div>
+          <div class="trial__container-border">
+            <div class="trial__inner">
+              <h2 class="trial__heading">
+                <p class="trial__heading-en font__anton">Free Trial</p>
+                <p class="trial__heading-ja">無料体験・入会申込</p>
+              </h2>
+              <div class="trial__bottom">
+                <p class="trial__text">
+                  デポルターレジムでは、初めての方でも安心してご利用いただけるように、無料体験を実施しています。ご入会に迷っている方も、まずはお気軽にお申し込みください。
+                </p>
+                <!--無料体験・入会申込ボタン -->
+                <a href="" class="button__more font__roboto trial__button"
+                  ><span class="button__more-text button__trial-text"
+                    >無料体験・入会申込はこちらから</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category max-width">
+        <div class="category__container">
+          <h2 class="section__heading category__h2">
+            <span class="section__heading-en font__anton">Category</span>
+            <span class="section__heading-ja">カテゴリー</span>
+          </h2>
+          <div class="category__list">
+            <div class="category__item category__facility">
+              <a href="" class="category__link">
+                <img
+                  src="assets/images/home/category-facility-sp.jpg"
+                  alt="カテゴリーの設備の写真"
+                  class="facility__pic-sp"
+                />
+                <img
+                  src="assets/images/home/category-facility-pc.jpg"
+                  alt="カテゴリーの設備の写真"
+                  class="facility__pic-pc"
+                />
+                <div class="category__bg category__bg01"></div>
+                <h3 class="category__heading heading__facility">
+                  <span class="category__heading-en font__anton">Facility</span
+                  ><span class="category__heading-ja">設備について</span>
+                </h3>
+              </a>
+            </div>
+            <div class="category__item-bottom">
+              <div class="category__item category__price">
+                <a href="" class="category__link">
+                  <img
+                    src="assets/images/home/category-price-sp.jpg"
+                    alt="カテゴリーの入会・料金の写真"
+                    class="price__pic"
+                  />
+
+                  <div class="category__bg category__bg02"></div>
+                  <h3 class="category__heading">
+                    <span class="category__heading-en font__anton"
+                      >Join/Price</span
+                    ><span class="category__heading-ja">入会・料金</span>
+                  </h3>
+                </a>
+              </div>
+              <div class="category__item category__trainer">
+                <a href="" class="category__link">
+                  <img
+                    src="assets/images/home/category-trainer-sp.jpg"
+                    alt="カテゴリーのトレーナーの写真"
+                    class="trainer__pic"
+                  />
+                  <div class="category__bg category__bg03"></div>
+                  <h3 class="category__heading">
+                    <span class="category__heading-en font__anton">Trainer</span
+                    ><span class="category__heading-ja">トレーナー</span>
+                  </h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="instagram">
+        <div class="instagram__container max-width">
+          <h2 class="instagram__heading">
+            <span class="instagram__heading-en font__anton">Instagram</span
+            ><span class="instagram__heading-ja">インスタグラム</span>
+          </h2>
+          <ul class="instagram__list">
+            <li class="instagram__item">
+              <div class="instagram__item-pic">
+                <img
+                  src="assets/images/home/Instagram-post.jpg"
+                  alt="インスタグラム投稿の写真"
+                />
+              </div>
+            </li>
+            <li class="instagram__item">
+              <div class="instagram__item-pic">
+                <img
+                  src="assets/images/home/Instagram-post.jpg"
+                  alt="インスタグラム投稿の写真"
+                />
+              </div>
+            </li>
+            <li class="instagram__item">
+              <div class="instagram__item-pic">
+                <img
+                  src="assets/images/home/Instagram-post.jpg"
+                  alt="インスタグラム投稿の写真"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="access">
+        <div class="access__container">
+          <h2 class="section__heading access__heading">
+            <span class="section__heading-en font__anton">Access</span>
+            <span class="section__heading-ja">アクセス</span>
+          </h2>
+          <div class="access__inner flex">
+            <dl class="access__list">
+              <div class="access__item0">
+                <h3 class="access__list-title">デポルターレジム</h3>
+              </div>
+              <div class="access__item">
+                <dt class="access__item-dt">住所</dt>
+                <dd class="access__item-dd">
+                  〒136-0073 東京都江東区北砂４丁目２６−１メゾンドール砂町銀座
+                  1F
+                </dd>
+              </div>
+              <div class="access__item">
+                <dt class="access__item-dt">交通アクセス</dt>
+                <dd class="access__item-dd">
+                  電車：〇〇駅 徒歩5分 、〇〇駅 徒歩3分
+                </dd>
+                <dd class="access__item-dd">
+                  バス：北砂７丁目亀戸駅・東陽町駅南砂町駅はバス停「学校通り」
+                  徒歩〇分
+                </dd>
+              </div>
+              <div class="access__item">
+                <dt class="access__item-dt">営業時間</dt>
+                <dd class="access__item-dd">
+                  平日 : 16:00 〜 22:30（最終入館 21:00・トレーニング最終
+                  22:00）
+                </dd>
+                <dd class="access__item-dd">
+                  土日祝 : 14:00 〜 19:30（最終入館 18:30・トレーニング最終
+                  19:00）
+                </dd>
+                <dd class="access__item-dd">※木曜のみ定休日</dd>
+              </div>
+            </dl>
+            <div class="access__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.5737956571747!2d139.83094547705016!3d35.679658020320375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018894946a0aa33%3A0x89bedb31fcff5e6a!2zQm94aW5nICYgTWFydGlhbCBBcnRzIERlcG9ydGFyZe-8iOODh-ODneODq-OCv-ODvOODrO-8iQ!5e0!3m2!1sja!2sjp!4v1720250398155!5m2!1sja!2sjp"
+                width="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <a href="">
+              <img
+                src="assets/images/common/logo/footer-logo.png"
+                alt="フッターロゴ"
+            /></a>
+          </div>
+          <div class="footer__info pc">
+            <h3 class="footer__info-title"><span></span>デポルターレジム</h3>
+            <p class="footer__info-detail">
+              〒136-0073 <br />東京都江東区北砂4丁目26-1メゾンドール砂町銀座 1F
+              Tel : 03-4400-8504 <br />
+              Fax : 03-4400-8505 <br />
+              Email : info@seiwaco.jp
+            </p>
+          </div>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <span>Home</span><span>ホーム</span>
+              </a>
+              <a href=""><span>お知らせ</span></a>
+              <a href=""><span>インスタグラム</span></a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <span>About us</span><span>デポルターレジムについて</span>
+              </a>
+              <a href=""><span>代表挨拶</span></a>
+              <a href=""><span>設備</span></a>
+              <a href=""><span>アクセス</span></a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <span>Join/Price</span><span>入会・料金</span>
+              </a>
+              <a href=""><span>料金・コース</span></a>
+              <a href=""><span>体験・申込の流れ</span></a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <span>Trainer</span><span>トレーナー</span>
+              </a>
+              <a href=""><span>アドバイザー・ドクター</span></a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <span>Info</span><span>会社情報</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <span>Policy</span><span>ポリシー</span>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__sns-btn"></div>
+          <div class="footer__reserve-btn"></div>
+        </div>
+        <div class="footer__info sp">
+          <h3 class="footer__info-title"><span></span>デポルターレジム</h3>
+          <p class="footer__info-detail">
+            〒136-0073 <br />東京都江東区北砂4丁目26-1メゾンドール砂町銀座 1F
+            Tel : 03-4400-8504 <br />
+            Fax : 03-4400-8505 <br />
+            Email : info@seiwaco.jp
+          </p>
+        </div>
+      </div>
+      <div class="footer__copyright">Copyright 2024 info@seiwaco.jp</div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
