@@ -738,6 +738,7 @@ footer {
 }
 .footer__logo {
   width: 145px;
+  margin-bottom: 36px;
   @include min(sm) {
     width: 294px;
   }
@@ -755,5 +756,29 @@ footer {
   display: block;
   @include min(sm) {
     display: none;
+  }
+}
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    .footer__link-main {
+      display: flex;
+      flex-direction: column;
+      .footer__link-main-en {
+        font-size: 1rem;
+        color: #e1c45f;
+      }
+      .footer__link-main-ja {
+        font-size: 1.3rem;
+        color: #fff;
+      }
+    }
+    .footer__link-sub {
+      font-size: 1.1rem;
+      color: #fff;
+    }
   }
 }

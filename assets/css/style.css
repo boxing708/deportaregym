@@ -814,6 +814,7 @@ footer {
 
 .footer__logo {
   width: 145px;
+  margin-bottom: 36px;
 }
 @media (width >= 768px) {
   .footer__logo {
@@ -841,4 +842,29 @@ footer {
   .footer__info.sp {
     display: none;
   }
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__list .footer__item {
+  display: flex;
+  flex-direction: column;
+}
+.footer__list .footer__item .footer__link-main {
+  display: flex;
+  flex-direction: column;
+}
+.footer__list .footer__item .footer__link-main .footer__link-main-en {
+  font-size: 1rem;
+  color: #e1c45f;
+}
+.footer__list .footer__item .footer__link-main .footer__link-main-ja {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.footer__list .footer__item .footer__link-sub {
+  font-size: 1.1rem;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
