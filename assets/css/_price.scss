@@ -1,0 +1,114 @@
+@use "mixin" as *;
+@use "header" as *;
+@use "footer" as *;
+
+//mv
+
+.mv__title {
+  position: absolute;
+  padding-top: 64px;
+  padding-left: 6%;
+  line-height: 1.4;
+  z-index: 100;
+  @include min(sm) {
+    max-height: 480px;
+    padding-left: 64px;
+  }
+  @include min(la) {
+    padding-left: 160px;
+  }
+  .mv__title-en {
+    display: block;
+    color: #e1c45f;
+    font-size: 1.5rem;
+    letter-spacing: 0.16em;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e1c45f;
+    @include min(sm) {
+      font-size: 2.4rem;
+      padding-bottom: 6px;
+      margin-bottom: 2px;
+    }
+  }
+  .mv__title-ja {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    @include min(sm) {
+      font-size: 3rem;
+    }
+  }
+}
+.mv__pic {
+  overflow: hidden;
+  height: 480px;
+  @include min(sm) {
+    height: 480px;
+  }
+  & img {
+    transform: scale(1.06);
+    -o-object-position: -35px 50%;
+    object-position: 33% 5px;
+    @include min(sm) {
+      transform: scale(1.08);
+      object-position: -35px 50%;
+    }
+  }
+  .mv__pic-bg {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.mv__button {
+  position: fixed;
+  width: clamp(8.4rem, 4.296rem + 8.07vw, 10rem);
+  height: auto;
+  margin-left: auto;
+  top: 72%;
+  right: 3%;
+  transition: all 0.3s;
+  z-index: 10;
+  &.anim-box.poyopoyo {
+    animation: poyopoyo 2s ease-out infinite;
+    opacity: 1;
+    @keyframes poyopoyo {
+      0%,
+      40%,
+      60%,
+      80% {
+        transform: scale(1);
+      }
+      50%,
+      70% {
+        transform: scale(0.95);
+      }
+    }
+  }
+  @include min(sm) {
+    width: clamp(10rem, 1.806rem + 9.26vw, 15rem);
+    // top: 72%;
+  }
+  & img {
+    width: 100%;
+  }
+}
+
+// course
+.course {
+  padding-top: 70px;
+  @include min(sm) {
+    padding-top: 100px;
+  }
+}
+.course__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.course__list {
+  & .course__item {
+  }
+}
