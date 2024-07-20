@@ -192,7 +192,7 @@ footer {
         color: #debf4e;
       }
       &:hover .footer__btn-sns-ja::after {
-        right: 10%;
+        right: 8%;
         border-top: 2px solid #debf4e;
         border-right: 2px solid #debf4e;
       }
@@ -202,13 +202,13 @@ footer {
       letter-spacing: 0.1em;
     }
     & .footer__btn-sns-ja {
-      font-size: 1.2rem;
+      font-size: clamp(1.1rem, 0.518rem + 1.91vw, 1.2rem);
       margin-top: -8px;
       &::after {
         position: absolute;
         content: "";
         top: 58%;
-        right: 15%;
+        right: 10%;
         width: 8px;
         height: 8px;
         border-top: 2px solid #fff;
