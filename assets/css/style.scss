@@ -1,104 +1,14 @@
 @use "mixin" as *;
-//header
-header {
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  background-color: #fff;
-  z-index: 999;
+@use "header" as *;
+@use "footer" as *;
+@use "price" as *;
 
-  @include min(sm) {
-    height: 80px;
-  }
-}
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 13px 20px;
-  @include min(sm) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: clamp(6rem, 1.681rem + 4.31vw, 7rem);
-    padding-left: clamp(6rem, 1.681rem + 4.31vw, 7rem);
-  }
-
-  .header__logo {
-    width: 145px;
-    @include min(sm) {
-      width: 168px;
-    }
-  }
-  .header__burger {
-    width: 30px;
-    height: 100%;
-    aspect-ratio: 1/1;
-    border: 0;
-    border-radius: 1px;
-    background-color: #fff;
-    cursor: pointer;
-    @include min(sm) {
-      display: none;
-    }
-    & span {
-      display: block;
-      background-color: #000;
-      height: 2px;
-      width: 22px;
-      transition: 0.5s;
-      &:nth-child(1) {
-        transform: translateY(9px);
-      }
-      &:nth-child(2) {
-      }
-      &:nth-child(3) {
-        transform: translateY(-9px);
-      }
-    }
-  }
-}
-
-.header__menu {
-  display: none;
-  @include min(sm) {
-    display: block;
-  }
-}
-.header__list {
-  @include min(sm) {
-    display: flex;
-    column-gap: 55px;
-  }
-
-  .header__item {
-    .header__item-link {
-      @include min(sm) {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .header__item-en {
-        @include min(sm) {
-          font-family: "Roboto", sans-serif;
-          color: #dfbb3f;
-          font-size: clamp(1.1rem, 0.3362rem + 0.8621vw, 1.2rem);
-          letter-spacing: 0.04em;
-          // font-weight: 600;
-        }
-      }
-      .header__item-ja {
-        @include min(sm) {
-          font-size: clamp(1.2rem, 0.3362rem + 0.8621vw, 1.3rem);
-          font-weight: 600;
-        }
-      }
-    }
-  }
-}
 //main
 main {
   padding-top: 66px;
+  @include min(sm) {
+    padding-top: 80px;
+  }
 }
 
 //mv
@@ -107,76 +17,199 @@ main {
   .mv__cp {
     position: absolute;
     color: #f5f5f5;
-    font-size: clamp(3rem, -1.193rem + 6.39vw, 6.4rem);
+    font-size: clamp(2.9rem, 0.643rem + 6.29vw, 4rem);
     letter-spacing: 0.17em;
     top: 6%;
     left: 5%;
     font-weight: 500;
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    line-height: 1.3;
+    line-height: 1.5;
+    @include min(ssm) {
+      line-height: 1.7;
+    }
+    @include min(sm) {
+      font-size: 4.6rem;
+    }
+    @include min(md) {
+      font-size: 5.4rem;
+    }
+    @include min(la) {
+      font-size: 6.4rem;
+    }
+    & .sp__new-line {
+      position: relative;
+      margin-left: 20px;
+    }
     & .pc__none {
-      @include min(ssm) {
+      @include min(sm) {
         display: none;
       }
     }
   }
-  .mv__video {
-    position: relative;
-    width: 100%;
-    & video {
-      width: 100%;
+  // .mv__video {
+  //   position: relative;
+  //   width: 100%;
+  //   & video {
+  //     width: 100%;
+  //   }
+  // }
+  .mv__list {
+    &.slider {
+      overflow: hidden;
+    }
+    @keyframes zoomDown {
+      0% {
+        transform: scale(1.08);
+      }
+      100% {
+        transform: scale(1); /* 拡大率 */
+      }
+    }
+    .add-animation {
+      animation: zoomDown 10s linear 0s normal both;
+    }
+    &:nth-child(3) {
+      @include min(sm) {
+        display: none;
+      }
+    }
+    .mv__img {
+      position: relative;
+
+      &.sp {
+        @include min(sm) {
+          display: none;
+        }
+      }
+      &.pc {
+        display: none;
+        @include min(sm) {
+          display: block;
+        }
+      }
+      & img {
+        @include min(sm) {
+          min-height: 500px;
+          max-height: 740px;
+        }
+        @keyframes zoomUp {
+          0% {
+            transform: scale(1);
+          }
+          100% {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .mv__img-bg {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.15);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
+
   .mv__button {
-    position: absolute;
-    width: clamp(8.4rem, 4.296rem + 8.07vw, 10rem);
+    position: fixed;
+    width: clamp(8.4rem, -2.4rem + 30.28vw, 11rem);
     height: auto;
     margin-left: auto;
-    top: 60%;
-    right: 4%;
+    top: 72%;
+    right: 3%;
+    transition: all 0.3s;
+    z-index: 10;
+    &.anim-box.poyopoyo {
+      animation: poyopoyo 2s ease-out infinite;
+      opacity: 1;
+      @keyframes poyopoyo {
+        0%,
+        40%,
+        60%,
+        80% {
+          transform: scale(1);
+        }
+        50%,
+        70% {
+          transform: scale(0.95);
+        }
+      }
+    }
     @include min(sm) {
-      width: clamp(10rem, 1.806rem + 9.26vw, 14rem);
-      top: 68%;
+      width: clamp(10rem, 1.806rem + 9.26vw, 15rem);
+      // top: 72%;
     }
     & img {
       width: 100%;
     }
-    // .mv__button_text {
-    //   position: absolute;
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   align-items: center;
-    //   top: 63%;
-    //   left: 50%;
-    //   transform: translate(-50%, -50%);
-    //   color: #fff;
-    //   width: 100%;
-
-    //   .mv__button_text01,
-    //   .mv__button_text02 {
-    //     font-size: 1.8rem;
-    //   }
-    //   .mv__button_text02 {
-    //     margin-top: 2%;
-    //     margin-bottom: 1%;
-    //   }
-    //   .mv__button_text03 {
-    //     font-size: 1.1rem;
-    //   }
-    // }
   }
   .mv__scroll {
     position: absolute;
-    bottom: 14%;
+    bottom: 6%;
     left: 50%;
-    translate: transform(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 1;
     color: #fff;
     font-size: 1.3rem;
     writing-mode: vertical-lr;
     letter-spacing: 0.05em;
+    font-weight: 400;
+    @include min(sm) {
+      bottom: 9%;
+    }
+    &::before {
+      animation: scroll 2s infinite;
+      background: #fff;
+      position: absolute;
+      content: "";
+      right: 0;
+      height: 80px;
+      margin: auto;
+      width: 1px;
+      border-radius: 2px;
+      z-index: 1;
+      @include min(sm) {
+        height: 90px;
+        width: 1.4px;
+      }
+    }
+    &::after {
+      background: #fff;
+      opacity: 0.4;
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      height: 80px;
+      margin: auto;
+      width: 1px;
+      border-radius: 2px;
+      @include min(sm) {
+        width: 1.4px;
+        height: 90px;
+      }
+    }
+    @keyframes scroll {
+      0% {
+        transform: scale(1, 0);
+        transform-origin: 0 0;
+      }
+      50% {
+        transform: scale(1, 1);
+        transform-origin: 0 0;
+      }
+      51% {
+        transform: scale(1, 1);
+        transform-origin: 0 100%;
+      }
+      100% {
+        transform: scale(1, 0);
+        transform-origin: 0 100%;
+      }
+    }
   }
 }
 
@@ -348,9 +381,15 @@ main {
   .trial__inner {
     height: 100%;
     margin: 0 auto;
-    padding: 5% 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
     @include min(sm) {
-      padding: 3% 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-left: 3%;
+      padding-right: 3%;
       max-width: 1040px;
     }
     @include min(la) {
@@ -360,7 +399,7 @@ main {
     .trial__heading {
       line-height: 1.3;
       .trial__heading-en {
-        font-size: 5.8rem;
+        font-size: clamp(4.8rem, 0.1rem + 15.24vw, 5.8rem);
         letter-spacing: 0.12em;
         color: #e1c45f;
         font-weight: 500;
@@ -392,7 +431,7 @@ main {
       .trial__text {
         color: #fff;
         font-size: 1.4rem;
-        line-height: 1.7;
+        line-height: 1.6;
         margin-bottom: 20px;
         @include min(sm) {
           font-size: 1.5rem;
@@ -413,7 +452,7 @@ main {
           height: 50px;
         }
         .button__trial-text {
-          font-size: 1.5rem;
+          font-size: clamp(1.4rem, 0.818rem + 1.91vw, 1.5rem);
           font-weight: 600;
           letter-spacing: 0;
           margin-left: 0;
@@ -422,8 +461,8 @@ main {
             font-size: 1.6rem;
           }
           &::after {
-            top: 36%;
-            right: 10%;
+            top: 37%;
+            right: 8%;
             width: 10px;
             height: 10px;
           }
@@ -513,13 +552,13 @@ main {
           transform: scale(1.1);
         }
         &:hover .category__bg {
-          background: rgba(0, 0, 0, 0.2);
+          background: rgba(0, 0, 0, 0.1);
         }
       }
     }
     .category__bg {
       position: absolute;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.3);
       top: 0;
       left: 0;
       width: 100%;
@@ -527,7 +566,7 @@ main {
       border-radius: 2px;
       transition: all 0.4s;
       @include min(sm) {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.4);
       }
     }
     .category__heading {
@@ -718,67 +757,6 @@ main {
         width: 48vw;
         max-width: 500px;
       }
-    }
-  }
-}
-
-//footer
-footer {
-  background-color: #202020;
-}
-.footer__container {
-  padding-top: 30px;
-  padding-bottom: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  @include min(sm) {
-    max-width: 1140px;
-    margin: 0 auto;
-  }
-}
-.footer__logo {
-  width: 145px;
-  margin-bottom: 36px;
-  @include min(sm) {
-    width: 294px;
-  }
-}
-.footer__info {
-  color: #fff;
-}
-.footer__info.pc {
-  display: none;
-  @include min(sm) {
-    display: block;
-  }
-}
-.footer__info.sp {
-  display: block;
-  @include min(sm) {
-    display: none;
-  }
-}
-.footer__list {
-  display: flex;
-  flex-wrap: wrap;
-  .footer__item {
-    display: flex;
-    flex-direction: column;
-    .footer__link-main {
-      display: flex;
-      flex-direction: column;
-      .footer__link-main-en {
-        font-size: 1rem;
-        color: #e1c45f;
-      }
-      .footer__link-main-ja {
-        font-size: 1.3rem;
-        color: #fff;
-      }
-    }
-    .footer__link-sub {
-      font-size: 1.1rem;
-      color: #fff;
     }
   }
 }

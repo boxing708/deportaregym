@@ -33,6 +33,17 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -66,47 +77,196 @@
           <span></span>
           <span></span>
         </button>
-        <nav class="header__menu">
+        <nav class="header__menu" id="header__menu">
+          <div class="header__menu-logo">
+            <img src="assets/images/common/logo/footer-logo.png" alt="" />
+          </div>
           <ul class="header__list">
             <li class="header__item">
               <a href="" class="header__item-link"
                 ><span class="header__item-en">Home</span
-                ><span class="header__item-ja">ホーム</span></a
+                ><span class="header__item-ja">ホーム</span>
+              </a>
+              <a href="" class="header__link-sub"><span>お知らせ</span></a>
+              <a href="" class="header__link-sub"
+                ><span>インスタグラム</span></a
               >
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >お知らせ
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >インスタグラム
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="header__item">
               <a href="" class="header__item-link"
                 ><span class="header__item-en">About us</span
-                ><span class="header__item-ja"
-                  >デポルターレジムについて</span
-                ></a
-              >
+                ><span class="header__item-ja">デポルターレジムについて</span>
+              </a>
+              <a href="" class="header__link-sub"><span>代表挨拶</span></a>
+              <a href="" class="header__link-sub"><span>設備</span></a>
+              <a href="" class="header__link-sub"><span>アクセス</span></a>
+              <ul class="dropdown__list only__length">
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >代表挨拶
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >設備
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >アクセス
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="header__item">
               <a href="" class="header__item-link"
                 ><span class="header__item-en">Price</span
-                ><span class="header__item-ja">入会・料金</span></a
+                ><span class="header__item-ja">入会・料金</span>
+              </a>
+              <a href="" class="header__link-sub"><span>料金・コース</span></a>
+              <a href="" class="header__link-sub"
+                ><span>体験・申込の流れ</span></a
               >
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >料金・コース
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >体験・申込の流れ
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="header__item">
               <a href="" class="header__item-link"
                 ><span class="header__item-en">Trainer</span
-                ><span class="header__item-ja">トレーナー</span></a
-              >
+                ><span class="header__item-ja">トレーナー</span>
+              </a>
+              <a href="" class="header__link-sub"><span>アドバイザー</span></a>
+              <a href="" class="header__link-sub"><span>ドクター</span></a>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >アドバイザー
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >ドクター
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+              </ul>
             </li>
           </ul>
+          <ul class="header__list-sub">
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Info</span
+                ><span class="header__item-ja">会社情報</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Policy</span
+                ><span class="header__item-ja">ポリシー</span>
+              </a>
+            </li>
+          </ul>
+          <div class="header__btn-group">
+            <a href="" class="header__btn-sns">
+              <span class="header__btn-sns-en font__roboto">SNS</span>
+              <span class="header__btn-sns-ja">デポルターレジム instagram</span>
+            </a>
+            <a href="" class="header__btn-reserve">
+              <span class="header__btn-sns-en font__roboto">Reserve</span>
+              <span class="header__btn-sns-ja"
+                >体験・入会のご予約はこちらから</span
+              >
+            </a>
+          </div>
         </nav>
       </div>
     </header>
     <main>
       <section class="mv">
-        <div class="mv__container">
+        <div class="mv__container splide__track">
           <h1 class="mv__cp font__anton">
             <span>Boxing & </span><br class="pc__none" /><span
+              class="sp__new-line"
               >Martial Arts Gym</span
             >
           </h1>
-          <div class="mv__video">
+          <!-- <div class="mv__video">
             <video
               src="assets/movie/mv-movie.mp4"
               autoplay
@@ -114,19 +274,47 @@
               playsinline
               loop
             ></video>
-          </div>
-          <div class="mv__button">
+          </div> -->
+          <ul class="mv__list slider">
+            <li class="mv__item">
+              <div class="mv__img sp">
+                <img
+                  src="assets/images/home/top-mv-sp01.jpg"
+                  alt="メインビジュアルジムの写真"
+                />
+                <div class="mv__img-bg"></div>
+              </div>
+              <div class="mv__img pc">
+                <img
+                  src="assets/images/home/top-mv-pc.jpg"
+                  alt="メインビジュアルジムの写真"
+                />
+                <div class="mv__img-bg"></div>
+              </div>
+            </li>
+            <li class="mv__item">
+              <div class="mv__img sp">
+                <img
+                  src="assets/images/home/top-mv-sp03.jpg"
+                  alt="メインビジュアルジムの写真"
+                />
+                <div class="mv__img-bg"></div>
+              </div>
+              <div class="mv__img pc">
+                <img
+                  src="assets/images/home/top-mv-pc02.jpg"
+                  alt="メインビジュアルジムの写真"
+                />
+                <div class="mv__img-bg"></div>
+              </div>
+            </li>
+          </ul>
+          <div class="mv__button anim-box poyopoyo">
             <a href="" class="button__link"
               ><img
                 src="assets/images/common/button/trial-button.png"
                 alt="無料体験ボタン"
             /></a>
-
-            <!-- <p class="mv__button_text">
-              <span class="mv__button_text01">無料体験</span
-              ><span class="mv__button_text02">入会申込</span
-              ><span class="mv__button_text03">はこちら</span>
-            </p> -->
           </div>
           <div class="mv__scroll"><span>scroll</span></div>
         </div>
@@ -313,28 +501,28 @@
           </h2>
           <ul class="instagram__list">
             <li class="instagram__item">
-              <div class="instagram__item-pic">
+              <a class="instagram__item-link">
                 <img
                   src="assets/images/home/Instagram-post.jpg"
                   alt="インスタグラム投稿の写真"
                 />
-              </div>
+              </a>
             </li>
             <li class="instagram__item">
-              <div class="instagram__item-pic">
+              <a class="instagram__item-link">
                 <img
                   src="assets/images/home/Instagram-post.jpg"
                   alt="インスタグラム投稿の写真"
                 />
-              </div>
+              </a>
             </li>
             <li class="instagram__item">
-              <div class="instagram__item-pic">
+              <a class="instagram__item-link">
                 <img
                   src="assets/images/home/Instagram-post.jpg"
                   alt="インスタグラム投稿の写真"
                 />
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -405,9 +593,12 @@
             /></a>
           </div>
           <div class="footer__info pc">
-            <h3 class="footer__info-title"><span></span>デポルターレジム</h3>
+            <div class="footer__info-line">
+              <h3 class="footer__info-title">デポルターレジム</h3>
+            </div>
             <p class="footer__info-detail">
               〒136-0073 <br />東京都江東区北砂4丁目26-1メゾンドール砂町銀座 1F
+              <br />
               Tel : 03-4400-8504 <br />
               Fax : 03-4400-8505 <br />
               Email : info@seiwaco.jp
@@ -415,62 +606,69 @@
           </div>
         </div>
         <div class="footer__right">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="" class="footer__link-main">
-                <span class="footer__link-main-en">Home</span
-                ><span class="footer__link-main-ja">ホーム</span>
-              </a>
-              <a href="" class="footer__link-sub"><span>お知らせ</span></a>
-              <a href="" class="footer__link-sub"
-                ><span>インスタグラム</span></a
-              >
-            </li>
-            <li class="footer__item">
-              <a href="" class="footer__link-main">
-                <span class="footer__link-main-en">About us</span
-                ><span class="footer__link-main-ja"
-                  >デポルターレジムについて</span
+          <div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link-main">
+                  <span class="footer__link-main-en">Home</span
+                  ><span class="footer__link-main-ja">ホーム</span>
+                </a>
+                <a href="" class="footer__link-sub"><span>お知らせ</span></a>
+                <a href="" class="footer__link-sub"
+                  ><span>インスタグラム</span></a
                 >
-              </a>
-              <a href="" class="footer__link-sub"><span>代表挨拶</span></a>
-              <a href="" class="footer__link-sub"><span>設備</span></a>
-              <a href="" class="footer__link-sub"><span>アクセス</span></a>
-            </li>
-            <li class="footer__item">
-              <a href="" class="footer__link-main">
-                <span class="footer__link-main-en">Join/Price</span
-                ><span class="footer__link-main-ja">入会・料金</span>
-              </a>
-              <a href="" class="footer__link-sub"><span>料金・コース</span></a>
-              <a href="" class="footer__link-sub"
-                ><span>体験・申込の流れ</span></a
-              >
-            </li>
-            <li class="footer__item">
-              <a href="" class="footer__link-main">
-                <span class="footer__link-main-en">Trainer</span
-                ><span class="footer__link-main-ja">トレーナー</span>
-              </a>
-              <a href="" class="footer__link-sub"
-                ><span class="footer__link-main-ja"
-                  >アドバイザー・ドクター</span
-                ></a
-              >
-            </li>
-            <li class="footer__item">
-              <a href="" class="footer__link-main">
-                <span class="footer__link-main-en">Info</span
-                ><span class="footer__link-main-ja">会社情報</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="" class="footer__link-main">
-                <span class="footer__link-main-en">Policy</span
-                ><span class="footer__link-main-ja">ポリシー</span>
-              </a>
-            </li>
-          </ul>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link-main">
+                  <span class="footer__link-main-en">About us</span
+                  ><span class="footer__link-main-ja"
+                    >デポルターレジムについて</span
+                  >
+                </a>
+                <a href="" class="footer__link-sub"><span>代表挨拶</span></a>
+                <a href="" class="footer__link-sub"><span>設備</span></a>
+                <a href="" class="footer__link-sub"><span>アクセス</span></a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link-main">
+                  <span class="footer__link-main-en">Join/Price</span
+                  ><span class="footer__link-main-ja">入会・料金</span>
+                </a>
+                <a href="" class="footer__link-sub"
+                  ><span>料金・コース</span></a
+                >
+                <a href="" class="footer__link-sub"
+                  ><span>体験・申込の流れ</span></a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link-main">
+                  <span class="footer__link-main-en">Trainer</span
+                  ><span class="footer__link-main-ja">トレーナー</span>
+                </a>
+                <a href="" class="footer__link-sub"
+                  ><span class="footer__link-main-ja">アドバイザー</span></a
+                >
+                <a href="" class="footer__link-sub"
+                  ><span class="footer__link-main-ja">ドクター</span></a
+                >
+              </li>
+            </ul>
+            <ul class="footer__list footer__list02">
+              <li class="footer__item">
+                <a href="" class="footer__link-main border__none">
+                  <span class="footer__link-main-en">Info</span
+                  ><span class="footer__link-main-ja">会社情報</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link-main border__none">
+                  <span class="footer__link-main-en">Policy</span
+                  ><span class="footer__link-main-ja">ポリシー</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="footer__btn-group">
             <a href="" class="footer__btn-sns">
               <span class="footer__btn-sns-en font__roboto">SNS</span>
@@ -485,7 +683,9 @@
           </div>
         </div>
         <div class="footer__info sp">
-          <h3 class="footer__info-title"><span></span>デポルターレジム</h3>
+          <div class="footer__info-line">
+            <h3 class="footer__info-title">デポルターレジム</h3>
+          </div>
           <p class="footer__info-detail">
             〒136-0073 <br />東京都江東区北砂4丁目26-1メゾンドール砂町銀座 1F
             Tel : 03-4400-8504 <br />
@@ -494,12 +694,18 @@
           </p>
         </div>
       </div>
-      <div class="footer__copyright">Copyright 2024 info@seiwaco.jp</div>
+      <div class="footer__copyright">
+        <small>Copyright 2024 info@seiwaco.jp</small>
+      </div>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     ></script>
     <script src="assets/js/script.js"></script>
   </body>
