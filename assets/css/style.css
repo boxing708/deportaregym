@@ -593,11 +593,11 @@ footer {
   font-size: 1.5rem;
   letter-spacing: 0.16em;
   padding-bottom: 6px;
-  border-bottom: 1px solid #e1c45f;
+  border-bottom: 1px solid rgba(225, 196, 95, 0.5);
 }
 @media (width >= 768px) {
   .mv__title .mv__title-en {
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding-bottom: 6px;
     margin-bottom: 2px;
   }
@@ -609,7 +609,7 @@ footer {
 }
 @media (width >= 768px) {
   .mv__title .mv__title-ja {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 }
 

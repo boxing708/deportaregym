@@ -23,9 +23,9 @@
     font-size: 1.5rem;
     letter-spacing: 0.16em;
     padding-bottom: 6px;
-    border-bottom: 1px solid #e1c45f;
+    border-bottom: 1px solid rgba(225, 196, 95, 0.5);
     @include min(sm) {
-      font-size: 2.4rem;
+      font-size: 2rem;
       padding-bottom: 6px;
       margin-bottom: 2px;
     }
@@ -35,7 +35,7 @@
     font-size: 1.8rem;
     font-weight: 600;
     @include min(sm) {
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
   }
 }
