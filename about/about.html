@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>デポルターレジム</title>
+    <meta name="description" content="ページの説明" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="" />
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="icon" type="image/png" sizes="16x16" href="" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="デポルターレジム" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="デポルターレジム" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="URL" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- <meta property="fb:app_id" content="AppID"> -->
+    <meta name="twitter:card" content="summary_large_image or summary" />
+
+    <!-- <meta name="twitter:site" content="@moshamusha2010" /> -->
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL" />
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div>
+          <a
+            href="../assets/images/common/logo/header-logo.png"
+            class="header__link"
+            ><img
+              src="../assets/images/common/logo/header-logo.png"
+              alt=""
+              class="header__logo"
+          /></a>
+        </div>
+        <button class="header__burger" id="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__menu" id="header__menu">
+          <div class="header__menu-logo">
+            <img src="../assets/images/common/logo/footer-logo.png" alt="" />
+          </div>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Home</span
+                ><span class="header__item-ja">ホーム</span>
+              </a>
+
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >お知らせ
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="../assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >インスタグラム
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="../assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">About us</span
+                ><span class="header__item-ja">デポルターレジムについて</span>
+              </a>
+
+              <ul class="dropdown__list only__length">
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >代表挨拶
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="../assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >設備
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="../assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >アクセス
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="../assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Price</span
+                ><span class="header__item-ja">入会・料金</span>
+              </a>
+
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >料金・コース
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="../assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >体験・申込の流れ
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="../assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Trainer</span
+                ><span class="header__item-ja">トレーナー</span>
+              </a>
+
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >アドバイザー
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="../assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__item-link"
+                    >ドクター
+                    <div class="dropdown__item-arrow">
+                      <img
+                        src="../assets/images/common/arrow/right-arrow.png"
+                        alt=""
+                        height="auto"
+                      /></div
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item pc__none">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Info</span
+                ><span class="header__item-ja">会社情報</span>
+              </a>
+            </li>
+            <li class="header__item pc__none">
+              <a href="" class="header__item-link"
+                ><span class="header__item-en">Policy</span
+                ><span class="header__item-ja">ポリシー</span>
+              </a>
+            </li>
+          </ul>
+          <div class="header__btn-group">
+            <a href="" class="header__btn-sns">
+              <span class="header__btn-sns-en font__roboto">SNS</span>
+              <span class="header__btn-sns-ja">デポルターレジム instagram</span>
+            </a>
+            <a href="" class="header__btn-reserve">
+              <span class="header__btn-sns-en font__roboto">Reserve</span>
+              <span class="header__btn-sns-ja"
+                >体験・入会のご予約はこちらから</span
+              >
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="mv about__mv">
+        <div class="mv__container">
+          <h1 class="mv__title">
+            <span class="mv__title-en font__anton">About us</span>
+            <span class="mv__title-ja">デポルターレジムについて</span>
+          </h1>
+          <div class="mv__pic">
+            <img
+              src="../assets/images/About/about-mv.jpg"
+              alt="メインビジュアルジムの写真"
+            />
+            <div class="mv__pic-bg"></div>
+          </div>
+          <div class="mv__button anim-box poyopoyo">
+            <a href="" class="button__link"
+              ><img
+                src="../assets/images/common/button/trial-button.png"
+                alt="無料体験ボタン"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section class="story">
+        <div class="story__container max-width">
+          <h2 class="story__heading font__anton">Boxing & Martial Arts Gym</h2>
+          <div class="story__pic">
+            <img
+              src="../assets/images/About/about-deportare.jpg"
+              alt="デポルターレジム集合写真"
+            />
+          </div>
+          <div class="story__heading-sub relative">
+            <h3 class="font__roboto">About Deportare</h3>
+          </div>
+          <p class="story__description">
+            デポルターレジムは東京都江東区北砂にある、ボクシング・キックボクシング・MMA(ストライキング）を主体とするジムです。ダイエット、健康維持、強くなりたい、試合してみたい、など様々な目的・用途で通っていただけます。<br />
+            「格闘技を目標の交差点に。」そんな想いから、2023年8月にデポルターレジムは歩み始めました。今現在たくさんの会員様やトレーナーの方々に支えられ、日々活動を続けております。
+          </p>
+        </div>
+      </section>
+      <section class="owner">
+        <div class="owner__container max-width">
+          <h2 class="owner__heading">
+            <span class="owner__heading-en font__anton">Owner</span>
+            <span class="owner__heading-ja">ジム代表挨拶</span>
+          </h2>
+          <div class="owner__inner">
+            <div class="owner__left">
+              <div class="owner__pic">
+                <img
+                  src="../assets/images/About/about-owner.jpg"
+                  alt="ジム代表加藤潤"
+                />
+              </div>
+            </div>
+            <div class="owner__right">
+              <h3 class="owner__name">加藤 潤</h3>
+              <span class="owner__title"
+                >ジム代表 / トレーナー / 元プロ格闘家</span
+              >
+              <h3 class="owner__name-en font__anton">Jun Kato</h3>
+              <p class="owner__description01">
+                デポルターレジム代表の加藤潤（かとうじゅん）です。強くなりたい人には「強くなる練習」をモットーに実践で使えるテクニックを指導しています。ストレス解消したい方や体力作り、健康のためにキックボクシングを始める人も大歓迎です。みなさん目的、楽しみ方はそれぞれです。個々に合ったトレーニングメニューで無理せず楽しめるように指導します。
+              </p>
+              <p class="owner__description02">
+                私を含め、トレーナーは安全を最優先とした指導、管理を常に行なっています。ルールさえ守れば、格闘技は安全なスポーツです。格闘技に興味をお持ちの方、まずはご見学・ご体験お気軽にお待ちしています。
+              </p>
+              <div class="owner__career">
+                <ul class="owner__list">
+                  <li class="owner__item">
+                    <span>■経歴</span
+                    ><span>元プロ格闘家（元ミドル級キックボクサー）</span>
+                  </li>
+                  <li class="owner__item">
+                    <span>■資格</span
+                    ><span
+                      >日本赤十字救急員/日本SAQ協会会員/スポーツ心理学受講
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="facility">
+        <div class="facility__container max-width">
+          <h2 class="section__heading">
+            <span class="section__heading-en font__anton">Facility</span>
+            <span class="section__heading-ja">設備について</span>
+          </h2>
+          <ul class="facility__list">
+            <li class="facility__item">
+              <div class="facility__item-pic">
+                <img
+                  src="../assets/images/About/about-facility01.jpg"
+                  alt="男子更衣室"
+                />
+              </div>
+              <h3 class="facility__item-heading">男子更衣室</h3>
+              <p class="facility__item-description">
+                シャワーブース、ドライヤー等お使いいただけます。
+              </p>
+            </li>
+            <li class="facility__item">
+              <div class="facility__item-pic">
+                <img
+                  src="../assets/images/About/about-facility02.jpg"
+                  alt="女子更衣室"
+                />
+              </div>
+              <h3 class="facility__item-heading">女子更衣室</h3>
+              <p class="facility__item-description">
+                シャワーブース、ドライヤー等お使いいただけます。
+              </p>
+            </li>
+            <li class="facility__item">
+              <div class="facility__item-pic">
+                <img
+                  src="../assets/images/About/about-facility03.jpg"
+                  alt="ロッカー"
+                />
+              </div>
+              <h3 class="facility__item-heading">ロッカー</h3>
+              <p class="facility__item-description">
+                鍵付きロッカーをご使用いただけます。貴重品等収納いただけます。
+              </p>
+            </li>
+            <li class="facility__item">
+              <div class="facility__item-pic">
+                <img
+                  src="../assets/images/About/about-facility04.jpg"
+                  alt="リング"
+                />
+              </div>
+              <h3 class="facility__item-heading">リング</h3>
+              <p class="facility__item-description">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </li>
+            <li class="facility__item">
+              <div class="facility__item-pic">
+                <img
+                  src="../assets/images/About/about-facility05.jpg"
+                  alt="サンドバック"
+                />
+              </div>
+              <h3 class="facility__item-heading">サンドバック</h3>
+              <p class="facility__item-description">
+                サンドバックは全部で〇〇基ございます。
+              </p>
+            </li>
+            <li class="facility__item">
+              <div class="facility__item-pic">
+                <img
+                  src="../assets/images/About/about-facility06.jpg"
+                  alt="トレーニング器具"
+                />
+              </div>
+              <h3 class="facility__item-heading">トレーニング器具</h3>
+              <p class="facility__item-description">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </li>
+            <li class="facility__item">
+              <div class="facility__item-pic">
+                <img
+                  src="../assets/images/About/about-facility07.jpg"
+                  alt="駐車場"
+                />
+              </div>
+              <h3 class="facility__item-heading">駐車場</h3>
+              <p class="facility__item-description">
+                ジム前・横に駐輪スペースがあります。バイクや自転車等駐車可能です。階段入口のみ駐輪不可なのでご了承ください。自動車に関しましては、近隣のコインパーキングをご利用下さい。
+              </p>
+            </li>
+            <li class="facility__item">
+              <div class="facility__item-pic">
+                <img
+                  src="../assets/images/About/about-facility08.jpg"
+                  alt="ドリンク・ギア販売"
+                />
+              </div>
+              <h3 class="facility__item-heading">ドリンク・ギア販売</h3>
+              <p class="facility__item-description">
+                各種ドリンク、グローブ、バンテージ等ございます。
+              </p>
+            </li>
+            <li class="facility__item">
+              <div class="facility__item-pic">
+                <img
+                  src="../assets/images/About/about-facility09.jpg"
+                  alt="その他"
+                />
+              </div>
+              <h3 class="facility__item-heading">その他</h3>
+              <p class="facility__item-description">
+                モニターで試合映像等見ることが可能です。
+                また雑誌やメディアの貸出し等も行なっています。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="trial">
+        <div class="trial__container trial__pic">
+          <img
+            src="../assets/images/common/trial/free-trial-sp.jpg"
+            alt="無料体験・入会申込の写真"
+            class="trial__pic-sp"
+          />
+          <img
+            src="../assets/images/common/trial/free-trial-pc.jpg"
+            alt="無料体験・入会申込の写真"
+            class="trial__pic-pc"
+          />
+          <div class="trial__pic-bg"></div>
+          <div class="trial__container-border">
+            <div class="trial__inner">
+              <h2 class="trial__heading">
+                <p class="trial__heading-en font__anton">Free Trial</p>
+                <p class="trial__heading-ja">無料体験・入会申込</p>
+              </h2>
+              <div class="trial__bottom">
+                <p class="trial__text">
+                  デポルターレジムでは、初めての方でも安心してご利用いただけるように、無料体験を実施しています。ご入会に迷っている方も、まずはお気軽にお申し込みください。
+                </p>
+                <!--無料体験・入会申込ボタン -->
+                <a href="" class="button__more font__roboto trial__button"
+                  ><span class="button__more-text button__trial-text"
+                    >無料体験・入会申込はこちらから</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="access">
+        <div class="access__container">
+          <h2 class="section__heading access__heading">
+            <span class="section__heading-en font__anton">Access</span>
+            <span class="section__heading-ja">アクセス</span>
+          </h2>
+          <div class="access__inner flex">
+            <dl class="access__list">
+              <div class="access__item0">
+                <h3 class="access__list-title">デポルターレジム</h3>
+              </div>
+              <div class="access__item">
+                <dt class="access__item-dt">住所</dt>
+                <dd class="access__item-dd">
+                  〒136-0073 東京都江東区北砂４丁目２６−１メゾンドール砂町銀座
+                  1F
+                </dd>
+              </div>
+              <div class="access__item">
+                <dt class="access__item-dt">交通アクセス</dt>
+                <dd class="access__item-dd">
+                  電車：〇〇駅 徒歩5分 、〇〇駅 徒歩3分
+                </dd>
+                <dd class="access__item-dd">
+                  バス：北砂７丁目亀戸駅・東陽町駅南砂町駅はバス停「学校通り」
+                  徒歩〇分
+                </dd>
+              </div>
+              <div class="access__item">
+                <dt class="access__item-dt">営業時間</dt>
+                <dd class="access__item-dd">
+                  平日 : 16:00 〜 22:30（最終入館 21:00・トレーニング最終
+                  22:00）
+                </dd>
+                <dd class="access__item-dd">
+                  土日祝 : 14:00 〜 19:30（最終入館 18:30・トレーニング最終
+                  19:00）
+                </dd>
+                <dd class="access__item-dd">※木曜のみ定休日</dd>
+              </div>
+            </dl>
+            <div class="access__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.5737956571747!2d139.83094547705016!3d35.679658020320375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018894946a0aa33%3A0x89bedb31fcff5e6a!2zQm94aW5nICYgTWFydGlhbCBBcnRzIERlcG9ydGFyZe-8iOODh-ODneODq-OCv-ODvOODrO-8iQ!5e0!3m2!1sja!2sjp!4v1720250398155!5m2!1sja!2sjp"
+                width="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <a href="">
+              <img
+                src="../assets/images/common/logo/footer-logo.png"
+                alt="フッターロゴ"
+            /></a>
+          </div>
+          <div class="footer__info pc">
+            <div class="footer__info-line">
+              <h3 class="footer__info-title">デポルターレジム</h3>
+            </div>
+            <p class="footer__info-detail">
+              〒136-0073 <br />東京都江東区北砂4丁目26-1メゾンドール砂町銀座 1F
+              <br />
+              Tel : 03-4400-8504 <br />
+              Fax : 03-4400-8505 <br />
+              Email : info@seiwaco.jp
+            </p>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link-main">
+                  <span class="footer__link-main-en">Home</span
+                  ><span class="footer__link-main-ja">ホーム</span>
+                </a>
+                <a href="" class="footer__link-sub"><span>お知らせ</span></a>
+                <a href="" class="footer__link-sub"
+                  ><span>インスタグラム</span></a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link-main">
+                  <span class="footer__link-main-en">About us</span
+                  ><span class="footer__link-main-ja"
+                    >デポルターレジムについて</span
+                  >
+                </a>
+                <a href="" class="footer__link-sub"><span>代表挨拶</span></a>
+                <a href="" class="footer__link-sub"><span>設備</span></a>
+                <a href="" class="footer__link-sub"><span>アクセス</span></a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link-main">
+                  <span class="footer__link-main-en">Join/Price</span
+                  ><span class="footer__link-main-ja">入会・料金</span>
+                </a>
+                <a href="" class="footer__link-sub"
+                  ><span>料金・コース</span></a
+                >
+                <a href="" class="footer__link-sub"
+                  ><span>体験・申込の流れ</span></a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link-main">
+                  <span class="footer__link-main-en">Trainer</span
+                  ><span class="footer__link-main-ja">トレーナー</span>
+                </a>
+                <a href="" class="footer__link-sub"
+                  ><span class="footer__link-main-ja">アドバイザー</span></a
+                >
+                <a href="" class="footer__link-sub"
+                  ><span class="footer__link-main-ja">ドクター</span></a
+                >
+              </li>
+            </ul>
+            <ul class="footer__list footer__list02">
+              <li class="footer__item">
+                <a href="" class="footer__link-main border__none">
+                  <span class="footer__link-main-en">Info</span
+                  ><span class="footer__link-main-ja">会社情報</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link-main border__none">
+                  <span class="footer__link-main-en">Policy</span
+                  ><span class="footer__link-main-ja">ポリシー</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__btn-group">
+            <a href="" class="footer__btn-sns">
+              <span class="footer__btn-sns-en font__roboto">SNS</span>
+              <span class="footer__btn-sns-ja">デポルターレジム instagram</span>
+            </a>
+            <a href="" class="footer__btn-reserve">
+              <span class="footer__btn-sns-en font__roboto">Reserve</span>
+              <span class="footer__btn-sns-ja"
+                >体験・入会のご予約はこちらから</span
+              >
+            </a>
+          </div>
+        </div>
+        <div class="footer__info sp">
+          <div class="footer__info-line">
+            <h3 class="footer__info-title">デポルターレジム</h3>
+          </div>
+          <p class="footer__info-detail">
+            〒136-0073 <br />東京都江東区北砂4丁目26-1メゾンドール砂町銀座 1F
+            Tel : 03-4400-8504 <br />
+            Fax : 03-4400-8505 <br />
+            Email : info@seiwaco.jp
+          </p>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <small>Copyright 2024 info@seiwaco.jp</small>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
