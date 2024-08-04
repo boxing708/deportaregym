@@ -6,18 +6,17 @@
 .about__mv {
   & .mv__pic {
     & img {
-      transform: scale(1.2);
+      transform: scale(1.35);
       -o-object-position: -35px 50%;
-      object-position: 35% -18px;
-      @include min(md) {
+      object-position: 55% 33px;
+      @include min(sm) {
         transform: scale(1.2);
-        -o-object-position: -35px 50%;
         object-position: 7px 15%;
       }
-      @include min(la) {
-        transform: scale(1.1);
-        -o-object-position: -35px 50%;
-        object-position: 2px 37%;
+      @include min(md) {
+        transform: scale(1.07);
+        -o-object-position: 2px 37%;
+        object-position: 33px 31%;
       }
     }
   }

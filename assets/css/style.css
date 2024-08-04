@@ -570,22 +570,22 @@ footer {
 }
 
 .about__mv .mv__pic img {
-  transform: scale(1.2);
+  transform: scale(1.35);
   -o-object-position: -35px 50%;
-  object-position: 35% -18px;
+  object-position: 55% 33px;
+}
+@media (width >= 768px) {
+  .about__mv .mv__pic img {
+    transform: scale(1.2);
+    -o-object-position: 7px 15%;
+       object-position: 7px 15%;
+  }
 }
 @media (width >= 960px) {
   .about__mv .mv__pic img {
-    transform: scale(1.2);
-    -o-object-position: -35px 50%;
-    object-position: 7px 15%;
-  }
-}
-@media (width >= 1280px) {
-  .about__mv .mv__pic img {
-    transform: scale(1.1);
-    -o-object-position: -35px 50%;
-    object-position: 2px 37%;
+    transform: scale(1.07);
+    -o-object-position: 2px 37%;
+    object-position: 33px 31%;
   }
 }
 
