@@ -44,7 +44,7 @@
     padding-bottom: 14px;
     border-top: 1px solid #333;
     border-radius: 1px;
-    @include min(ssm) {
+    @include min(sm) {
       padding-top: 16px;
       padding-bottom: 16px;
     }
@@ -59,7 +59,10 @@
       font-weight: 500;
       &.info__item-title-sub05 {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        @include min(sm) {
+          flex-direction: row;
+        }
       }
       &.info__item-title-sub02 span {
         margin-right: 8px;

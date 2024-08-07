@@ -1973,7 +1973,7 @@ footer {
   border-top: 1px solid #333;
   border-radius: 1px;
 }
-@media (width >= 480px) {
+@media (width >= 768px) {
   .info__list .info__item {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1991,7 +1991,12 @@ footer {
 }
 .info__list .info__item .info__item-title-sub.info__item-title-sub05 {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (width >= 768px) {
+  .info__list .info__item .info__item-title-sub.info__item-title-sub05 {
+    flex-direction: row;
+  }
 }
 .info__list .info__item .info__item-title-sub.info__item-title-sub02 span {
   margin-right: 8px;
