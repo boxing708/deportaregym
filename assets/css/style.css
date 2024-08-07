@@ -1989,6 +1989,10 @@ footer {
   font-size: 1.4rem;
   font-weight: 500;
 }
+.info__list .info__item .info__item-title-sub.info__item-title-sub05 {
+  display: flex;
+  flex-wrap: wrap;
+}
 .info__list .info__item .info__item-title-sub.info__item-title-sub02 span {
   margin-right: 8px;
 }
