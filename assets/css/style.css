@@ -1930,6 +1930,113 @@ footer {
   font-size: 1.4rem;
 }
 
+.policy__mv .mv__pic {
+  overflow: hidden;
+}
+.policy__mv .mv__pic img {
+  transform: scale(1.4);
+  -o-object-position: -35px 50%;
+  object-position: -164px -67px;
+}
+@media (width >= 480px) {
+  .policy__mv .mv__pic img {
+    transform: scale(1.4);
+    -o-object-position: -35px 50%;
+    object-position: -77px -67px;
+  }
+}
+@media (width >= 768px) {
+  .policy__mv .mv__pic img {
+    transform: scale(1.08);
+    -o-object-position: -35px 50%;
+    object-position: 10px 88%;
+  }
+}
+
+.info {
+  padding-top: 70px;
+}
+@media (width >= 768px) {
+  .info {
+    padding-top: 100px;
+  }
+}
+.info .info__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.info__list .info__item {
+  list-style: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: 1px solid #333;
+  border-radius: 1px;
+}
+@media (width >= 768px) {
+  .info__list .info__item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+.info__list .info__item:last-child {
+  border-bottom: 1px solid #333;
+}
+.info__list .info__item .info__item-title {
+  margin-bottom: 6px;
+}
+.info__list .info__item .info__item-title-sub {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.info__list .info__item .info__item-title-sub.info__item-title-sub05 {
+  display: flex;
+  flex-direction: column;
+}
+@media (width >= 768px) {
+  .info__list .info__item .info__item-title-sub.info__item-title-sub05 {
+    flex-direction: row;
+  }
+}
+.info__list .info__item .info__item-title-sub.info__item-title-sub02 span {
+  margin-right: 8px;
+}
+.info__list .info__item .info__item-title-sub.info__item-title-sub04 span {
+  display: block;
+}
+.info__list .info__item .info__item-title-sub.info__item-title-sub05 span {
+  margin-right: 16px;
+}
+
+.policy {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+@media (width >= 768px) {
+  .policy {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+}
+.policy .policy__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.policy__list .policy__item {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.policy__list .policy__item:last-child {
+  margin-bottom: 0;
+}
+.policy__list .policy__item .policy__title {
+  margin-bottom: 12px;
+}
+.policy__list .policy__item .policy__description {
+  font-size: 1.4rem;
+}
+
 main {
   padding-top: 66px;
 }
