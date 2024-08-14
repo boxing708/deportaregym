@@ -28,11 +28,25 @@ main {
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
     z-index: 1;
     line-height: 1.5;
+    &.text__fade {
+      clip-path: inset(0 100% 0 0);
+      animation: textanimation 2s 1s forwards;
+    }
+    @keyframes textanimation {
+      0% {
+        clip-path: inset(0 100% 0 0);
+      }
+
+      100% {
+        clip-path: inset(0);
+      }
+    }
     @include min(ssm) {
       line-height: 1.7;
     }
     @include min(sm) {
       font-size: 4.6rem;
+      top: 5%;
     }
     @include min(md) {
       font-size: 5.4rem;
@@ -43,6 +57,9 @@ main {
     & .sp__new-line {
       position: relative;
       margin-left: 20px;
+      @include min(sm) {
+        margin-left: 0;
+      }
     }
     & .pc__none {
       @include min(sm) {
@@ -218,9 +235,9 @@ main {
 
 //news
 .news {
-  padding-top: 70px;
+  padding-top: 50px;
   @include min(sm) {
-    padding-top: 100px;
+    padding-top: 70px;
   }
 }
 .news__container {
@@ -228,15 +245,12 @@ main {
   padding-left: 20px;
 }
 .news__list {
-  .news__item {
+  & .news__item {
     list-style: none;
     padding-bottom: 8px;
     border-bottom: 1px solid #000;
     margin-bottom: 8px;
     @include min(sm) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       padding-bottom: 14px;
       margin-bottom: 14px;
     }
@@ -246,18 +260,26 @@ main {
         margin-bottom: 40px;
       }
     }
-    .news__date {
-      font-size: 1.5rem;
-      color: #e1c45f;
-      font-weight: 600;
-    }
-    .news__description {
-      font-size: 1.4rem;
-      margin-top: 6px;
-
+    & .news__item-link {
       @include min(sm) {
-        margin-top: 0;
-        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .news__date {
+        font-size: 1.5rem;
+        color: #e1c45f;
+        font-weight: 600;
+      }
+      .news__description {
+        font-size: 1.4rem;
+        margin-top: 6px;
+
+        @include min(sm) {
+          margin-top: 0;
+          margin-left: 5%;
+        }
       }
     }
   }
@@ -265,10 +287,10 @@ main {
 
 //about
 .about {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 50px;
   @include min(sm) {
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 80px;
   }
 }
@@ -414,6 +436,7 @@ main {
         }
       }
       .trial__heading-ja {
+        display: block;
         font-size: 2rem;
         color: #fff;
         margin-left: 2.6%;
@@ -477,10 +500,10 @@ main {
 
 // category
 .category {
-  padding-top: 50px;
+  padding-top: 32px;
   padding-bottom: 50px;
   @include min(sm) {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 80px;
   }
 }
@@ -489,7 +512,7 @@ main {
   padding-right: 20px;
   & .category__h2 {
     @include min(sm) {
-      margin-bottom: 70px;
+      margin-bottom: 40px;
     }
   }
 }
@@ -623,11 +646,11 @@ main {
 
 // instagram
 .instagram {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 40px;
   background-color: #202020;
   @include min(sm) {
-    padding-top: 48px;
+    padding-top: 56px;
     padding-bottom: 56px;
   }
 }
@@ -667,9 +690,10 @@ main {
       column-gap: 12px;
     }
     .instagram__item {
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
       list-style: none;
       @include min(sm) {
+        margin-bottom: 16px;
         margin-bottom: none;
       }
     }
@@ -678,7 +702,7 @@ main {
 
 //access
 .access {
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 60px;
   @include min(sm) {
     padding-top: 100px;
@@ -699,10 +723,10 @@ main {
   }
   .access__heading {
     position: relative;
-    bottom: 2vh;
-    margin-bottom: 10px;
+    bottom: 24px;
+    margin-bottom: 0;
     @include min(sm) {
-      margin-bottom: 40px;
+      bottom: 40px;
     }
   }
 }

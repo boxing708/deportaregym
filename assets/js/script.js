@@ -51,3 +51,32 @@ $(function () {
       },
     });
 });
+
+// 全体的にfadeup
+const targets = document.querySelectorAll(".fadeup");
+
+for (let i = targets.length; i--; ) {
+  let observer = new IntersectionObserver((entries, observer) => {
+    for (let j = entries.length; j--; ) {
+      if (entries[j].isIntersecting) {
+        entries[j].target.classList.add("is-show");
+        observer.unobserve(entries[j].target);
+      }
+    }
+  });
+  observer.observe(targets[i]);
+}
+
+//mv trialボタン　フッター直前で止める
+// window.addEventListener("scroll", function () {
+//   const scrollHeight = document.documentElement.scrollHeight;
+//   const scrollPosition = window.innerHeight + window.scrollY;
+//   const footHeight = document.querySelector(".footer").offsetHeight;
+//   const mvButton = document.querySelector(".mv__button");
+
+//   if (scrollHeight - scrollPosition <= footHeight) {
+//     mvButton.style.position = "absolute";
+//   } else {
+//     mvButton.style.position = "fixed";
+//   }
+// });
