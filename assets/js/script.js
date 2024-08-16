@@ -26,7 +26,7 @@ $(function () {
     .slick({
       autoplay: true, //自動再生
       autoplaySpeed: 4000, //自動再生のスピード
-      speed: 3000, //スライドスピード
+      speed: 2500, //スライドスピード
       slidesToShow: 1, //スライドの表示枚数
       fade: true, // フェードON
       arrows: false,
@@ -79,4 +79,18 @@ for (let i = targets.length; i--; ) {
 //   } else {
 //     mvButton.style.position = "fixed";
 //   }
+// });
+
+//ローディングアニメーション;
+// window.addEventListener("load", function () {
+//   setTimeout(function () {
+//     const loader = document.querySelector(".loader");
+//     if (loader) {
+//       loader.style.transition = "opacity 0.6s";
+//       loader.style.opacity = 0;
+//       setTimeout(function () {
+//         loader.style.display = "none";
+//       }, 600); // "slow" is approximately 600ms
+//     }
+//   }, 1500);
 // });
