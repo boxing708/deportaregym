@@ -24,8 +24,8 @@
 
 //story
 .story {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 
   @include min(sm) {
     padding-top: 70px;
@@ -46,6 +46,9 @@
     text-align: center;
     letter-spacing: 0.12em;
     color: #333;
+    &.fadeup {
+      transition-delay: 0.2s;
+    }
     @include min(sm) {
       font-size: clamp(4.8rem, -0.044rem + 5.93vw, 6rem);
     }
@@ -106,7 +109,6 @@
 //owner
 .owner {
   background: #f4f4f4;
-  padding-top: 20px;
   padding-bottom: 30px;
   position: relative;
   @include min(sm) {
@@ -121,18 +123,19 @@
 }
 .owner__heading {
   position: relative;
-  bottom: 34px;
+  bottom: 30px;
+  line-height: 1;
   @include min(sm) {
-    margin-bottom: 32px;
+    bottom: 40px;
   }
   & .owner__heading-en {
     display: block;
     font-size: 4.8rem;
     letter-spacing: 0.12em;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     @include min(sm) {
       font-size: 8rem;
-      margin-bottom: 30px;
+      margin-bottom: 16px;
     }
   }
   & .owner__heading-ja {
@@ -146,6 +149,8 @@
   @include min(sm) {
     display: flex;
     margin: 0 auto;
+    // position: relative;
+    // bottom: 6px;
   }
 }
 .owner__left {
@@ -292,10 +297,10 @@
 
 //facility
 .facility {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 50px;
   @include min(sm) {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 80px;
   }
 }

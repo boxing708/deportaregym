@@ -26,7 +26,7 @@ $(function () {
     .slick({
       autoplay: true, //自動再生
       autoplaySpeed: 4000, //自動再生のスピード
-      speed: 3000, //スライドスピード
+      speed: 2500, //スライドスピード
       slidesToShow: 1, //スライドの表示枚数
       fade: true, // フェードON
       arrows: false,
@@ -51,3 +51,46 @@ $(function () {
       },
     });
 });
+
+// 全体的にfadeup
+const targets = document.querySelectorAll(".fadeup");
+
+for (let i = targets.length; i--; ) {
+  let observer = new IntersectionObserver((entries, observer) => {
+    for (let j = entries.length; j--; ) {
+      if (entries[j].isIntersecting) {
+        entries[j].target.classList.add("is-show");
+        observer.unobserve(entries[j].target);
+      }
+    }
+  });
+  observer.observe(targets[i]);
+}
+
+//mv trialボタン　フッター直前で止める
+// window.addEventListener("scroll", function () {
+//   const scrollHeight = document.documentElement.scrollHeight;
+//   const scrollPosition = window.innerHeight + window.scrollY;
+//   const footHeight = document.querySelector(".footer").offsetHeight;
+//   const mvButton = document.querySelector(".mv__button");
+
+//   if (scrollHeight - scrollPosition <= footHeight) {
+//     mvButton.style.position = "absolute";
+//   } else {
+//     mvButton.style.position = "fixed";
+//   }
+// });
+
+//ローディングアニメーション;
+// window.addEventListener("load", function () {
+//   setTimeout(function () {
+//     const loader = document.querySelector(".loader");
+//     if (loader) {
+//       loader.style.transition = "opacity 0.6s";
+//       loader.style.opacity = 0;
+//       setTimeout(function () {
+//         loader.style.display = "none";
+//       }, 600); // "slow" is approximately 600ms
+//     }
+//   }, 1500);
+// });

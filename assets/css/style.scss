@@ -20,17 +20,28 @@ main {
   .mv__cp {
     position: absolute;
     color: #f5f5f5;
-    font-size: clamp(2.9rem, 0.643rem + 6.29vw, 4rem);
+    font-size: clamp(2.9rem, 0.643rem + 6.29vw, 3.7rem);
     letter-spacing: 0.17em;
-    top: 6%;
+    top: 5%;
     left: 5%;
     font-weight: 500;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
     z-index: 1;
     line-height: 1.5;
-    @include min(ssm) {
-      line-height: 1.7;
+    &.text__fade {
+      clip-path: inset(0 100% 0 0);
+      animation: textanimation 2s 1s forwards;
     }
+    @keyframes textanimation {
+      0% {
+        clip-path: inset(0 100% 0 0);
+      }
+
+      100% {
+        clip-path: inset(0);
+      }
+    }
+
     @include min(sm) {
       font-size: 4.6rem;
     }
@@ -43,6 +54,9 @@ main {
     & .sp__new-line {
       position: relative;
       margin-left: 20px;
+      @include min(sm) {
+        margin-left: 0;
+      }
     }
     & .pc__none {
       @include min(sm) {
@@ -77,25 +91,58 @@ main {
         display: none;
       }
     }
-    .mv__img {
+    .mv__pic {
       position: relative;
-
-      &.sp {
-        @include min(sm) {
-          display: none;
+      height: 590px;
+      @include min(md) {
+        height: 680px;
+      }
+      @include min(la) {
+        height: clamp(72rem, 14.25rem + 40.5vw, 90rem);
+      }
+      &.mv__pic01 {
+        & img {
+          object-position: 6% 60px;
+          transform: scale(1.45);
+          @include min(sm) {
+            object-position: 28px 20px;
+            transform: scale(1.4);
+          }
+          @include min(la) {
+            object-position: 28px -60px;
+            transform: scale(1.2);
+          }
         }
       }
-      &.pc {
-        display: none;
-        @include min(sm) {
-          display: block;
+      &.mv__pic02 {
+        & img {
+          object-position: 30% 3px;
+          transform: scale(1);
+          @include min(sm) {
+          }
         }
       }
+      &.mv__pic03 {
+        & img {
+          object-position: 15% 0px;
+          transform: scale(1);
+          @include min(sm) {
+            object-position: 25% 10px;
+          }
+        }
+      }
+      // &.sp {
+      //   @include min(sm) {
+      //     display: none;
+      //   }
+      // }
+      // &.pc {
+      //   display: none;
+      //   @include min(sm) {
+      //     display: block;
+      //   }
+      // }
       & img {
-        @include min(sm) {
-          min-height: 500px;
-          max-height: 740px;
-        }
         @keyframes zoomUp {
           0% {
             transform: scale(1);
@@ -105,7 +152,7 @@ main {
           }
         }
       }
-      .mv__img-bg {
+      .mv__pic-bg {
         position: absolute;
         background-color: rgba(0, 0, 0, 0.15);
         top: 0;
@@ -218,9 +265,9 @@ main {
 
 //news
 .news {
-  padding-top: 70px;
+  padding-top: 50px;
   @include min(sm) {
-    padding-top: 100px;
+    padding-top: 70px;
   }
 }
 .news__container {
@@ -228,15 +275,12 @@ main {
   padding-left: 20px;
 }
 .news__list {
-  .news__item {
+  & .news__item {
     list-style: none;
     padding-bottom: 8px;
     border-bottom: 1px solid #000;
     margin-bottom: 8px;
     @include min(sm) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       padding-bottom: 14px;
       margin-bottom: 14px;
     }
@@ -246,18 +290,26 @@ main {
         margin-bottom: 40px;
       }
     }
-    .news__date {
-      font-size: 1.5rem;
-      color: #e1c45f;
-      font-weight: 600;
-    }
-    .news__description {
-      font-size: 1.4rem;
-      margin-top: 6px;
-
+    & .news__item-link {
       @include min(sm) {
-        margin-top: 0;
-        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .news__date {
+        font-size: 1.5rem;
+        color: #e1c45f;
+        font-weight: 600;
+      }
+      .news__description {
+        font-size: 1.4rem;
+        margin-top: 6px;
+
+        @include min(sm) {
+          margin-top: 0;
+          margin-left: 5%;
+        }
       }
     }
   }
@@ -265,10 +317,10 @@ main {
 
 //about
 .about {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 50px;
   @include min(sm) {
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 80px;
   }
 }
@@ -414,6 +466,7 @@ main {
         }
       }
       .trial__heading-ja {
+        display: block;
         font-size: 2rem;
         color: #fff;
         margin-left: 2.6%;
@@ -477,10 +530,10 @@ main {
 
 // category
 .category {
-  padding-top: 50px;
+  padding-top: 32px;
   padding-bottom: 50px;
   @include min(sm) {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 80px;
   }
 }
@@ -489,7 +542,7 @@ main {
   padding-right: 20px;
   & .category__h2 {
     @include min(sm) {
-      margin-bottom: 70px;
+      margin-bottom: 40px;
     }
   }
 }
@@ -623,11 +676,11 @@ main {
 
 // instagram
 .instagram {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 40px;
   background-color: #202020;
   @include min(sm) {
-    padding-top: 48px;
+    padding-top: 56px;
     padding-bottom: 56px;
   }
 }
@@ -667,9 +720,10 @@ main {
       column-gap: 12px;
     }
     .instagram__item {
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
       list-style: none;
       @include min(sm) {
+        margin-bottom: 16px;
         margin-bottom: none;
       }
     }
@@ -678,7 +732,7 @@ main {
 
 //access
 .access {
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 60px;
   @include min(sm) {
     padding-top: 100px;
@@ -699,10 +753,10 @@ main {
   }
   .access__heading {
     position: relative;
-    bottom: 2vh;
-    margin-bottom: 10px;
+    bottom: 24px;
+    margin-bottom: 0;
     @include min(sm) {
-      margin-bottom: 40px;
+      bottom: 40px;
     }
   }
 }
@@ -750,6 +804,9 @@ main {
       }
       .access__item-dd {
         font-size: 1.4rem;
+        & .access__item-dd-small {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -765,3 +822,38 @@ main {
     }
   }
 }
+
+// .loader {
+//   position: fixed;
+//   width: 100%;
+//   height: 100vh;
+//   background-color: #202020;
+//   z-index: 999;
+//   top: 0;
+//   left: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   & .loading__logo {
+//     width: 140px;
+//     @include min(sm) {
+//       width: 200px;
+//     }
+//     & .logo__fadeup {
+//       animation-name: fadeUpAnime;
+//       animation-duration: 1s;
+//       animation-fill-mode: forwards;
+//       opacity: 0;
+//       @keyframes fadeUpAnime {
+//         from {
+//           opacity: 0;
+//           transform: translateY(100px);
+//         }
+//         to {
+//           opacity: 1;
+//           transform: translateY(0);
+//         }
+//       }
+//     }
+//   }
+// }
