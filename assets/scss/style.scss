@@ -724,7 +724,6 @@ main {
       list-style: none;
       @include min(sm) {
         margin-bottom: 16px;
-        margin-bottom: none;
       }
     }
   }
