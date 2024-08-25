@@ -65,8 +65,8 @@ header {
   transform: translateY(-9px);
 }
 .header__container .header__burger.is-active span:nth-child(1) {
-  rotate: 45deg;
-  translate: 6px -2px;
+  transform: rotate(45deg);
+  translate: 0 4px;
   background-color: #fff;
 }
 .header__container .header__burger.is-active span:nth-child(2) {
@@ -2840,7 +2840,6 @@ main {
 @media (width >= 768px) {
   .instagram__container .instagram__list .instagram__item {
     margin-bottom: 16px;
-    margin-bottom: none;
   }
 }
 

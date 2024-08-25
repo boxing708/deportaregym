@@ -59,8 +59,8 @@ header {
       }
     }
     &.is-active span:nth-child(1) {
-      rotate: 45deg;
-      translate: 6px -2px;
+      transform: rotate(45deg);
+      translate: 0 4px;
       background-color: #fff;
     }
     &.is-active span:nth-child(2) {
