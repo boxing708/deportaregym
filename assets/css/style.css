@@ -2205,9 +2205,9 @@ main {
   }
 }
 .mv__container .mv__list .mv__pic.mv__pic01 img {
-  -o-object-position: 6% 60px;
-     object-position: 6% 60px;
-  transform: scale(1.45);
+  -o-object-position: 5% 50px;
+     object-position: 5% 50px;
+  transform: scale(1.5);
 }
 @media (width >= 768px) {
   .mv__container .mv__list .mv__pic.mv__pic01 img {
@@ -2823,6 +2823,7 @@ main {
 }
 .instagram__container .instagram__list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   -moz-column-gap: 6px;
@@ -2830,6 +2831,7 @@ main {
 }
 @media (width >= 768px) {
   .instagram__container .instagram__list {
+    flex-direction: row;
     -moz-column-gap: 12px;
          column-gap: 12px;
   }
@@ -2949,4 +2951,4 @@ main {
     width: 48vw;
     max-width: 500px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
