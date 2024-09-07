@@ -42,7 +42,7 @@
     position: relative;
     top: 10px;
     z-index: 1;
-    font-size: clamp(2rem, 6.4vw, 3rem);
+    font-size: clamp(2.4rem, 5.25vw, 2.8rem);
     text-align: center;
     letter-spacing: 0.12em;
     color: #333;
@@ -155,7 +155,7 @@
 }
 .owner__left {
   & .owner__pic {
-    height: clamp(24rem, 14.571rem + 27.39vw, 32rem);
+    height: clamp(26rem, 2.125rem + 67.75vw, 37rem);
     overflow: hidden;
     margin-bottom: 20px;
     @include min(sm) {
@@ -254,6 +254,7 @@
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 10px;
+  padding-right: 10px;
   @include min(sm) {
     padding-top: 12px;
     padding-bottom: 12px;

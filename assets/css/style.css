@@ -351,13 +351,19 @@ footer {
     background-color: #e1c45f;
   }
   .footer__info.pc .footer__info-line .footer__info-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-left: 12px;
   }
   .footer__info.pc .footer__info-detail {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     max-width: 312px;
     line-height: 2;
+  }
+  .footer__info.pc .footer__info-detail .address {
+    margin-bottom: 6px;
+  }
+  .footer__info.pc .footer__info-detail span {
+    display: block;
   }
 }
 
@@ -386,13 +392,14 @@ footer {
   .footer__list {
     -moz-column-gap: 55px;
          column-gap: 55px;
+    margin-bottom: 32px;
   }
 }
 @media (width >= 1280px) {
   .footer__list {
     -moz-column-gap: 55px;
          column-gap: 55px;
-    margin-bottom: 32px;
+    margin-bottom: 60px;
   }
 }
 .footer__list.footer__list02 {
@@ -400,7 +407,7 @@ footer {
 }
 @media (width >= 1280px) {
   .footer__list.footer__list02 {
-    margin-bottom: 48px;
+    margin-bottom: 60px;
   }
 }
 .footer__list .footer__item {
@@ -477,6 +484,11 @@ footer {
 .footer__btn-group .footer__btn-sns {
   margin-bottom: 10px;
 }
+@media (width >= 1280px) {
+  .footer__btn-group .footer__btn-sns {
+    margin-bottom: 0;
+  }
+}
 .footer__btn-group .footer__btn-sns, .footer__btn-group .footer__btn-reserve {
   position: relative;
   display: flex;
@@ -549,6 +561,12 @@ footer {
 .footer__info.sp .footer__info-detail {
   font-size: 1.2rem;
 }
+.footer__info.sp .footer__info-detail .address {
+  margin-bottom: 6px;
+}
+.footer__info.sp .footer__info-detail span {
+  display: block;
+}
 @media (width >= 768px) {
   .footer__info.sp {
     display: none;
@@ -612,7 +630,7 @@ footer {
   position: relative;
   top: 10px;
   z-index: 1;
-  font-size: clamp(2rem, 6.4vw, 3rem);
+  font-size: clamp(2.4rem, 5.25vw, 2.8rem);
   text-align: center;
   letter-spacing: 0.12em;
   color: #333;
@@ -745,7 +763,7 @@ footer {
 }
 
 .owner__left .owner__pic {
-  height: clamp(24rem, 14.571rem + 27.39vw, 32rem);
+  height: clamp(26rem, 2.125rem + 67.75vw, 37rem);
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -867,6 +885,7 @@ footer {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 @media (width >= 768px) {
   .owner__career {
@@ -1713,13 +1732,13 @@ footer {
   display: block;
   color: #fff;
   font-size: 3.8rem;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 3px 4px rgba(30, 30, 30, 0.25);
   letter-spacing: 0.12em;
   margin-bottom: 8px;
 }
 @media (width >= 768px) {
   .flow__item-heading .flow__item-heading-en {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 2px 2px 4px rgba(30, 30, 30, 0.25);
     font-size: 5.8rem;
   }
 }
@@ -2118,7 +2137,7 @@ main {
 .mv__container .mv__cp {
   position: absolute;
   color: #f5f5f5;
-  font-size: clamp(2.9rem, 0.643rem + 6.29vw, 3.7rem);
+  font-size: clamp(2.9rem, 0.643rem + 6.29vw, 3.4rem);
   letter-spacing: 0.17em;
   top: 5%;
   left: 5%;
@@ -2205,8 +2224,8 @@ main {
   }
 }
 .mv__container .mv__list .mv__pic.mv__pic01 img {
-  -o-object-position: 5% 50px;
-     object-position: 5% 50px;
+  -o-object-position: 5% 60px;
+     object-position: 5% 60px;
   transform: scale(1.5);
 }
 @media (width >= 768px) {
@@ -2224,8 +2243,8 @@ main {
   }
 }
 .mv__container .mv__list .mv__pic.mv__pic02 img {
-  -o-object-position: 30% 3px;
-     object-position: 30% 3px;
+  -o-object-position: 31% 1px;
+     object-position: 31% 1px;
   transform: scale(1);
 }
 .mv__container .mv__list .mv__pic.mv__pic03 img {
@@ -2821,17 +2840,11 @@ main {
     font-size: 2.4rem;
   }
 }
-.instagram__container .instagram__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  -moz-column-gap: 6px;
-       column-gap: 6px;
-}
 @media (width >= 768px) {
   .instagram__container .instagram__list {
-    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     -moz-column-gap: 12px;
          column-gap: 12px;
   }
@@ -2839,9 +2852,15 @@ main {
 .instagram__container .instagram__list .instagram__item {
   list-style: none;
 }
+@media (width < 768px) {
+  .instagram__container .instagram__list .instagram__item:nth-child(2), .instagram__container .instagram__list .instagram__item:nth-child(3) {
+    display: none;
+  }
+}
 @media (width >= 768px) {
   .instagram__container .instagram__list .instagram__item {
     margin-bottom: 16px;
+    display: block;
   }
 }
 
