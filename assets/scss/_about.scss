@@ -108,7 +108,7 @@
 
 //owner
 .owner {
-  background: #f4f4f4;
+  background: #f3f4f1;
   padding-bottom: 30px;
   position: relative;
   @include min(sm) {
@@ -173,9 +173,9 @@
       -o-object-position: 50% -6px;
       object-position: 50% -37px;
       @include min(sm) {
-        transform: scale(1.38);
+        transform: scale(1.4);
         -o-object-position: 50% -18px;
-        object-position: 50% -16px;
+        object-position: 50% -15px;
       }
     }
   }

@@ -707,7 +707,7 @@ footer {
 }
 
 .owner {
-  background: #f4f4f4;
+  background: #f3f4f1;
   padding-bottom: 30px;
   position: relative;
 }
@@ -788,9 +788,9 @@ footer {
 }
 @media (width >= 768px) {
   .owner__left .owner__pic img {
-    transform: scale(1.38);
+    transform: scale(1.4);
     -o-object-position: 50% -18px;
-    object-position: 50% -16px;
+    object-position: 50% -15px;
   }
 }
 
@@ -1593,7 +1593,7 @@ footer {
 }
 
 .flow__list .flow__item {
-  background-color: #eee;
+  background-color: #f3f4f1;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 50px;
@@ -2279,7 +2279,7 @@ main {
   width: clamp(8.4rem, -2.4rem + 30.28vw, 11rem);
   height: auto;
   margin-left: auto;
-  top: 72%;
+  top: 81%;
   right: 3%;
   transition: all 0.3s;
   z-index: 10;
@@ -2299,6 +2299,7 @@ main {
 @media (width >= 768px) {
   .mv__container .mv__button {
     width: clamp(10rem, 1.806rem + 9.26vw, 15rem);
+    top: 73%;
   }
 }
 .mv__container .mv__button img {

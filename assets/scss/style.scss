@@ -150,7 +150,7 @@ main {
     width: clamp(8.4rem, -2.4rem + 30.28vw, 11rem);
     height: auto;
     margin-left: auto;
-    top: 72%;
+    top: 81%;
     right: 3%;
     transition: all 0.3s;
     z-index: 10;
@@ -172,7 +172,7 @@ main {
     }
     @include min(sm) {
       width: clamp(10rem, 1.806rem + 9.26vw, 15rem);
-      // top: 72%;
+      top: 73%;
     }
     & img {
       width: 100%;
