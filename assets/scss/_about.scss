@@ -7,16 +7,15 @@
   & .mv__pic {
     & img {
       transform: scale(1.35);
-      -o-object-position: -35px 50%;
-      object-position: 55% 33px;
+
+      object-position: 8% -56px;
       @include min(sm) {
-        transform: scale(1.2);
-        object-position: 7px 15%;
+        transform: scale(1.3);
+        object-position: 72px 124%;
       }
       @include min(md) {
         transform: scale(1.07);
-        -o-object-position: 2px 37%;
-        object-position: 33px 31%;
+        object-position: 35px 65%;
       }
     }
   }
@@ -24,84 +23,223 @@
 
 //story
 .story {
-  padding-top: 40px;
-  padding-bottom: 80px;
-
+  padding-top: 100px;
+  padding-bottom: 380px;
   @include min(sm) {
-    padding-top: 70px;
-    padding-bottom: 130px;
+    padding-top: 130px;
+    padding-bottom: 420px;
+  }
+  @include min(md) {
+    padding-top: 180px;
+    padding-bottom: 500px;
   }
   @include min(la) {
-    padding-top: 100px;
+    padding-bottom: 580px;
   }
 }
 .story__container {
-  padding-left: 20px;
-  padding-right: 20px;
-  & .story__heading {
-    position: relative;
-    top: 10px;
-    z-index: 1;
-    font-size: clamp(2.4rem, 5.25vw, 2.8rem);
-    text-align: center;
-    letter-spacing: 0.12em;
-    color: #333;
-    &.fadeup {
-      transition-delay: 0.2s;
+  position: relative;
+  height: 32vh;
+  & .story__bg {
+    position: absolute;
+    background-color: #f6f7f0;
+    width: 80%;
+    height: 60vh;
+    right: 0;
+    z-index: -1;
+    max-width: 1080px;
+    margin-left: auto;
+    @include min(md) {
+      height: 70vh;
+      max-height: 680px;
     }
-    @include min(sm) {
-      font-size: clamp(4.8rem, -0.044rem + 5.93vw, 6rem);
+    @include min(la) {
+      height: 80vh;
     }
   }
-  .story__pic {
+  & .story__bg-inner {
+    @include min(md) {
+      position: relative;
+      max-width: 1160px;
+      margin: 0 auto;
+      height: 100%;
+    }
+  }
+  & .story__pic01 {
+    position: absolute;
+    top: -15%;
+    width: 76vw;
+    max-width: 312px;
+    margin-left: 20px;
     overflow: hidden;
-    margin-bottom: 16px;
     @include min(sm) {
-      max-height: 440px;
-      margin-bottom: 28px;
+      top: -24%;
+      width: 56vw;
+      max-width: 526px;
+    }
+    @include min(md) {
+      top: -30%;
+      width: 60vw;
+      max-width: 694px;
+      height: 45vh;
+    }
+    @include min(la) {
+      top: -37%;
+      height: 52vh;
+      margin-left: 0;
+    }
+    &.fadeup {
+      transition-delay: 0.5s;
+      @include min(sm) {
+        transition-delay: 0.8s;
+      }
     }
     & img {
-      transform: scale(1.25);
-      -o-object-position: -35px 50%;
-      object-position: -10px -19px;
+      transform: scale(1.07);
+      object-position: -6px 50%;
+      @include min(md) {
+        transform: scale(1.02);
+        object-position: -30px -9px;
+      }
+    }
+  }
+  & .story__heading {
+    position: absolute;
+    top: 75%;
+    margin-left: 20px;
+    font-size: clamp(1.5rem, -1rem + 7.3vw, 2.4rem);
+    letter-spacing: 0.12em;
+    line-height: 1.8;
+    @include min(sm) {
+      top: -10%;
+      right: 2%;
+      margin-left: 0;
+      margin-right: 20px;
+      font-size: clamp(2.9rem, 0.2rem + 3vw, 3.2rem);
+    }
+    @include min(md) {
+      top: -13%;
+      right: 3%;
+      margin-right: 0;
+      font-size: clamp(3.2rem, 0.2rem + 3.2vw, 4.3rem);
+      line-height: 2;
+    }
+    @include min(la) {
+      top: -20%;
+      right: 0;
+      font-size: clamp(4.3rem, 0.3rem + 3.3vw, 4.8rem);
+      margin-right: 0;
+    }
+    &.fadeup {
+      transition-delay: 0.7s;
       @include min(sm) {
-        transform: scale(1);
-        -o-object-position: -35px 50%;
-        object-position: 50% 0;
+        transition-delay: 1s;
+      }
+    }
+  }
+  & .story__pic02 {
+    position: absolute;
+    top: 48%;
+    right: 0;
+    width: 50vw;
+    max-width: 210px;
+    height: 21vh;
+    overflow: hidden;
+    @include min(sm) {
+      top: 61%;
+      right: 0;
+      width: 45vw;
+      max-width: 500px;
+      height: 35.2vh;
+    }
+    @include min(md) {
+      top: 96%;
+      right: 0;
+      width: 46vw;
+      max-width: 542px;
+      height: 44vh;
+    }
+    @include min(la) {
+      top: 102%;
+      height: 54vh;
+    }
+    &.fadeup {
+      transition-delay: 0.6s;
+      @include min(sm) {
+        transition-delay: 1.2s;
+      }
+    }
+    & img {
+      @include min(sm) {
+        transform: scale(1.1);
+        object-position: -50px 50%;
       }
       @include min(md) {
-        transform: scale(1);
-        -o-object-position: -35px 50%;
-        object-position: 50% -90px;
+        transform: scale(1.15);
+        object-position: -65px 50%;
       }
     }
   }
-  & .story__heading-sub {
-    position: relative;
-    margin-bottom: 10px;
-    @include min(sm) {
-      margin-bottom: 14px;
-    }
-    &::before {
-      position: absolute;
-      content: "";
-      width: 2px;
-      height: 100%;
-      background-color: #e1c45f;
-    }
-    & .font__roboto {
-      font-weight: 600;
-      margin-left: 12px;
 
+  .story__text {
+    position: absolute;
+    top: 123%;
+    margin-left: 20px;
+    margin-right: 20px;
+    @include min(sm) {
+      top: 115%;
+      width: 48%;
+    }
+    @include min(md) {
+      width: 45%;
+      top: 129%;
+    }
+    @include min(la) {
+      top: 150%;
+      width: 47%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &.fadeup {
+      transition-delay: 0.8s;
       @include min(sm) {
-        font-size: 1.7rem;
+        transition-delay: 1s;
       }
     }
-  }
-  & .story__description {
-    font-size: 1.4rem;
-    @include min(sm) {
-      line-height: 2;
+    & .story__heading-sub {
+      position: relative;
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      @include min(sm) {
+        font-size: 1.5rem;
+        margin-bottom: 14px;
+      }
+      @include min(la) {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 100%;
+        background-color: #e1c45f;
+      }
+      & .font__roboto {
+        font-weight: 600;
+        margin-left: 12px;
+      }
+    }
+    & .story__description {
+      line-height: 1.8;
+      font-size: 1.3rem;
+      @include min(sm) {
+        font-size: 1.4rem;
+        line-height: 2;
+      }
+      @include min(la) {
+        line-height: 2.2;
+      }
     }
   }
 }
