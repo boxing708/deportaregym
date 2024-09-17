@@ -6,9 +6,8 @@
 .about__mv {
   & .mv__pic {
     & img {
-      transform: scale(1.35);
-
-      object-position: 8% -56px;
+      transform: scale(1.5);
+      object-position: 10% -43px;
       @include min(sm) {
         transform: scale(1.3);
         object-position: 72px 124%;
@@ -23,18 +22,19 @@
 
 //story
 .story {
-  padding-top: 100px;
-  padding-bottom: 380px;
+  padding-top: 86px;
+  padding-bottom: 430px;
   @include min(sm) {
     padding-top: 130px;
-    padding-bottom: 420px;
+    padding-bottom: 440px;
   }
   @include min(md) {
-    padding-top: 180px;
-    padding-bottom: 500px;
+    padding-top: 150px;
+    padding-bottom: 470px;
   }
   @include min(la) {
-    padding-bottom: 580px;
+    padding-top: 180px;
+    padding-bottom: 560px;
   }
 }
 .story__container {
@@ -44,17 +44,24 @@
     position: absolute;
     background-color: #f6f7f0;
     width: 80%;
-    height: 60vh;
+    height: 75vh;
     right: 0;
     z-index: -1;
     max-width: 1080px;
     margin-left: auto;
+    @include min(sm) {
+      height: 82vh;
+    }
     @include min(md) {
-      height: 70vh;
+      height: 84vh;
       max-height: 680px;
     }
     @include min(la) {
       height: 80vh;
+      max-width: 1600px;
+      max-height: 710px;
+      margin: 0 auto;
+      margin-left: 0;
     }
   }
   & .story__bg-inner {
@@ -67,25 +74,29 @@
   }
   & .story__pic01 {
     position: absolute;
-    top: -15%;
-    width: 76vw;
+    top: -17%;
+    width: 72vw;
     max-width: 312px;
     margin-left: 20px;
     overflow: hidden;
     @include min(sm) {
       top: -24%;
-      width: 56vw;
-      max-width: 526px;
+      width: 54vw;
+      max-width: 520px;
+      max-height: 300px;
     }
     @include min(md) {
-      top: -30%;
-      width: 60vw;
-      max-width: 694px;
-      height: 45vh;
+      top: -35%;
+      width: 61vw;
+      max-width: 620px;
+      height: 52vh;
+      max-height: 370px;
     }
     @include min(la) {
-      top: -37%;
-      height: 52vh;
+      top: -34%;
+      max-width: 694px;
+      height: 400px;
+      max-height: 400px;
       margin-left: 0;
     }
     &.fadeup {
@@ -98,28 +109,28 @@
       transform: scale(1.07);
       object-position: -6px 50%;
       @include min(md) {
-        transform: scale(1.02);
+        transform: scale(1);
         object-position: -30px -9px;
       }
     }
   }
   & .story__heading {
     position: absolute;
-    top: 75%;
+    top: 93%;
     margin-left: 20px;
-    font-size: clamp(1.5rem, -1rem + 7.3vw, 2.4rem);
+    font-size: clamp(1.5rem, -1rem + 7.1vw, 2.2rem);
     letter-spacing: 0.12em;
     line-height: 1.8;
     @include min(sm) {
-      top: -10%;
-      right: 2%;
+      top: -14%;
+      right: 5%;
       margin-left: 0;
       margin-right: 20px;
-      font-size: clamp(2.9rem, 0.2rem + 3vw, 3.2rem);
+      font-size: clamp(2.7rem, 0.2rem + 3vw, 3.2rem);
     }
     @include min(md) {
-      top: -13%;
-      right: 3%;
+      top: -16%;
+      right: 5%;
       margin-right: 0;
       font-size: clamp(3.2rem, 0.2rem + 3.2vw, 4.3rem);
       line-height: 2;
@@ -127,7 +138,7 @@
     @include min(la) {
       top: -20%;
       right: 0;
-      font-size: clamp(4.3rem, 0.3rem + 3.3vw, 4.8rem);
+      font-size: 4.8rem;
       margin-right: 0;
     }
     &.fadeup {
@@ -139,60 +150,70 @@
   }
   & .story__pic02 {
     position: absolute;
-    top: 48%;
+    top: 61%;
     right: 0;
-    width: 50vw;
+    width: 44vw;
     max-width: 210px;
-    height: 21vh;
+    height: 22vh;
     overflow: hidden;
     @include min(sm) {
-      top: 61%;
+      top: 85%;
       right: 0;
       width: 45vw;
       max-width: 500px;
-      height: 35.2vh;
+      height: 36vh;
     }
     @include min(md) {
-      top: 96%;
+      top: 104%;
       right: 0;
-      width: 46vw;
+      width: 42vw;
       max-width: 542px;
-      height: 44vh;
+      height: 45vh;
+      max-height: 320px;
     }
     @include min(la) {
-      top: 102%;
-      height: 54vh;
+      top: 100%;
+      max-height: 430px;
+      height: 430px;
     }
     &.fadeup {
       transition-delay: 0.6s;
       @include min(sm) {
-        transition-delay: 1.2s;
+        transition-delay: 0.8s;
       }
     }
     & img {
+      transform: scale(1.04);
+      -o-object-position: -6px 50%;
+      object-position: -27px 50%;
       @include min(sm) {
-        transform: scale(1.1);
-        object-position: -50px 50%;
+        transform: scale(1.06);
+        object-position: -42px 50%;
       }
       @include min(md) {
-        transform: scale(1.15);
-        object-position: -65px 50%;
+        transform: scale(1.1);
+        -o-object-position: -65px 50%;
+        object-position: -46px 50%;
+      }
+      @include min(la) {
+        transform: scale(1.1);
+        object-position: -64px 50%;
       }
     }
   }
 
   .story__text {
     position: absolute;
-    top: 123%;
+    top: 150%;
     margin-left: 20px;
     margin-right: 20px;
     @include min(sm) {
-      top: 115%;
+      top: 142%;
       width: 48%;
     }
     @include min(md) {
-      width: 45%;
-      top: 129%;
+      width: 49%;
+      top: 148%;
     }
     @include min(la) {
       top: 150%;
@@ -201,7 +222,7 @@
       margin-right: 0;
     }
     &.fadeup {
-      transition-delay: 0.8s;
+      transition-delay: 0.9s;
       @include min(sm) {
         transition-delay: 1s;
       }
@@ -210,9 +231,8 @@
       position: relative;
       font-size: 1.4rem;
       margin-bottom: 12px;
-      @include min(sm) {
-        font-size: 1.5rem;
-        margin-bottom: 14px;
+      @include min(md) {
+        margin-bottom: 16px;
       }
       @include min(la) {
         font-size: 1.6rem;
@@ -234,10 +254,10 @@
       line-height: 1.8;
       font-size: 1.3rem;
       @include min(sm) {
-        font-size: 1.4rem;
         line-height: 2;
       }
       @include min(la) {
+        font-size: 1.5rem;
         line-height: 2.2;
       }
     }

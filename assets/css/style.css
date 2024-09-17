@@ -587,9 +587,9 @@ footer {
 }
 
 .about__mv .mv__pic img {
-  transform: scale(1.35);
-  -o-object-position: 8% -56px;
-     object-position: 8% -56px;
+  transform: scale(1.5);
+  -o-object-position: 10% -43px;
+     object-position: 10% -43px;
 }
 @media (width >= 768px) {
   .about__mv .mv__pic img {
@@ -607,24 +607,25 @@ footer {
 }
 
 .story {
-  padding-top: 100px;
-  padding-bottom: 380px;
+  padding-top: 86px;
+  padding-bottom: 430px;
 }
 @media (width >= 768px) {
   .story {
     padding-top: 130px;
-    padding-bottom: 420px;
+    padding-bottom: 440px;
   }
 }
 @media (width >= 960px) {
   .story {
-    padding-top: 180px;
-    padding-bottom: 500px;
+    padding-top: 150px;
+    padding-bottom: 470px;
   }
 }
 @media (width >= 1280px) {
   .story {
-    padding-bottom: 580px;
+    padding-top: 180px;
+    padding-bottom: 560px;
   }
 }
 
@@ -636,21 +637,30 @@ footer {
   position: absolute;
   background-color: #f6f7f0;
   width: 80%;
-  height: 60vh;
+  height: 75vh;
   right: 0;
   z-index: -1;
   max-width: 1080px;
   margin-left: auto;
 }
+@media (width >= 768px) {
+  .story__container .story__bg {
+    height: 82vh;
+  }
+}
 @media (width >= 960px) {
   .story__container .story__bg {
-    height: 70vh;
+    height: 84vh;
     max-height: 680px;
   }
 }
 @media (width >= 1280px) {
   .story__container .story__bg {
     height: 80vh;
+    max-width: 1600px;
+    max-height: 710px;
+    margin: 0 auto;
+    margin-left: 0;
   }
 }
 @media (width >= 960px) {
@@ -663,8 +673,8 @@ footer {
 }
 .story__container .story__pic01 {
   position: absolute;
-  top: -15%;
-  width: 76vw;
+  top: -17%;
+  width: 72vw;
   max-width: 312px;
   margin-left: 20px;
   overflow: hidden;
@@ -672,22 +682,26 @@ footer {
 @media (width >= 768px) {
   .story__container .story__pic01 {
     top: -24%;
-    width: 56vw;
-    max-width: 526px;
+    width: 54vw;
+    max-width: 520px;
+    max-height: 300px;
   }
 }
 @media (width >= 960px) {
   .story__container .story__pic01 {
-    top: -30%;
-    width: 60vw;
-    max-width: 694px;
-    height: 45vh;
+    top: -35%;
+    width: 61vw;
+    max-width: 620px;
+    height: 52vh;
+    max-height: 370px;
   }
 }
 @media (width >= 1280px) {
   .story__container .story__pic01 {
-    top: -37%;
-    height: 52vh;
+    top: -34%;
+    max-width: 694px;
+    height: 400px;
+    max-height: 400px;
     margin-left: 0;
   }
 }
@@ -706,32 +720,32 @@ footer {
 }
 @media (width >= 960px) {
   .story__container .story__pic01 img {
-    transform: scale(1.02);
+    transform: scale(1);
     -o-object-position: -30px -9px;
        object-position: -30px -9px;
   }
 }
 .story__container .story__heading {
   position: absolute;
-  top: 75%;
+  top: 93%;
   margin-left: 20px;
-  font-size: clamp(1.5rem, -1rem + 7.3vw, 2.4rem);
+  font-size: clamp(1.5rem, -1rem + 7.1vw, 2.2rem);
   letter-spacing: 0.12em;
   line-height: 1.8;
 }
 @media (width >= 768px) {
   .story__container .story__heading {
-    top: -10%;
-    right: 2%;
+    top: -14%;
+    right: 5%;
     margin-left: 0;
     margin-right: 20px;
-    font-size: clamp(2.9rem, 0.2rem + 3vw, 3.2rem);
+    font-size: clamp(2.7rem, 0.2rem + 3vw, 3.2rem);
   }
 }
 @media (width >= 960px) {
   .story__container .story__heading {
-    top: -13%;
-    right: 3%;
+    top: -16%;
+    right: 5%;
     margin-right: 0;
     font-size: clamp(3.2rem, 0.2rem + 3.2vw, 4.3rem);
     line-height: 2;
@@ -741,7 +755,7 @@ footer {
   .story__container .story__heading {
     top: -20%;
     right: 0;
-    font-size: clamp(4.3rem, 0.3rem + 3.3vw, 4.8rem);
+    font-size: 4.8rem;
     margin-right: 0;
   }
 }
@@ -755,35 +769,37 @@ footer {
 }
 .story__container .story__pic02 {
   position: absolute;
-  top: 48%;
+  top: 61%;
   right: 0;
-  width: 50vw;
+  width: 44vw;
   max-width: 210px;
-  height: 21vh;
+  height: 22vh;
   overflow: hidden;
 }
 @media (width >= 768px) {
   .story__container .story__pic02 {
-    top: 61%;
+    top: 85%;
     right: 0;
     width: 45vw;
     max-width: 500px;
-    height: 35.2vh;
+    height: 36vh;
   }
 }
 @media (width >= 960px) {
   .story__container .story__pic02 {
-    top: 96%;
+    top: 104%;
     right: 0;
-    width: 46vw;
+    width: 42vw;
     max-width: 542px;
-    height: 44vh;
+    height: 45vh;
+    max-height: 320px;
   }
 }
 @media (width >= 1280px) {
   .story__container .story__pic02 {
-    top: 102%;
-    height: 54vh;
+    top: 100%;
+    max-height: 430px;
+    height: 430px;
   }
 }
 .story__container .story__pic02.fadeup {
@@ -791,39 +807,51 @@ footer {
 }
 @media (width >= 768px) {
   .story__container .story__pic02.fadeup {
-    transition-delay: 1.2s;
+    transition-delay: 0.8s;
   }
+}
+.story__container .story__pic02 img {
+  transform: scale(1.04);
+  -o-object-position: -6px 50%;
+  object-position: -27px 50%;
 }
 @media (width >= 768px) {
   .story__container .story__pic02 img {
-    transform: scale(1.1);
-    -o-object-position: -50px 50%;
-       object-position: -50px 50%;
+    transform: scale(1.06);
+    -o-object-position: -42px 50%;
+       object-position: -42px 50%;
   }
 }
 @media (width >= 960px) {
   .story__container .story__pic02 img {
-    transform: scale(1.15);
+    transform: scale(1.1);
     -o-object-position: -65px 50%;
-       object-position: -65px 50%;
+    object-position: -46px 50%;
+  }
+}
+@media (width >= 1280px) {
+  .story__container .story__pic02 img {
+    transform: scale(1.1);
+    -o-object-position: -64px 50%;
+       object-position: -64px 50%;
   }
 }
 .story__container .story__text {
   position: absolute;
-  top: 123%;
+  top: 150%;
   margin-left: 20px;
   margin-right: 20px;
 }
 @media (width >= 768px) {
   .story__container .story__text {
-    top: 115%;
+    top: 142%;
     width: 48%;
   }
 }
 @media (width >= 960px) {
   .story__container .story__text {
-    width: 45%;
-    top: 129%;
+    width: 49%;
+    top: 148%;
   }
 }
 @media (width >= 1280px) {
@@ -835,7 +863,7 @@ footer {
   }
 }
 .story__container .story__text.fadeup {
-  transition-delay: 0.8s;
+  transition-delay: 0.9s;
 }
 @media (width >= 768px) {
   .story__container .story__text.fadeup {
@@ -847,10 +875,9 @@ footer {
   font-size: 1.4rem;
   margin-bottom: 12px;
 }
-@media (width >= 768px) {
+@media (width >= 960px) {
   .story__container .story__text .story__heading-sub {
-    font-size: 1.5rem;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 @media (width >= 1280px) {
@@ -876,12 +903,12 @@ footer {
 }
 @media (width >= 768px) {
   .story__container .story__text .story__description {
-    font-size: 1.4rem;
     line-height: 2;
   }
 }
 @media (width >= 1280px) {
   .story__container .story__text .story__description {
+    font-size: 1.5rem;
     line-height: 2.2;
   }
 }
@@ -2005,7 +2032,7 @@ footer {
 @media (width >= 768px) {
   .trainer {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 110px;
   }
 }
 .trainer .trainer__container {
