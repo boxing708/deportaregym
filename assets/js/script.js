@@ -52,6 +52,10 @@ $(function () {
     });
 });
 
+$(".slider").on("touchmove", function (event, slick, currentSlide, nextSlide) {
+  $(".slider").slick("slickPlay");
+});
+
 // 全体的にfadeup
 const targets = document.querySelectorAll(".fadeup");
 

@@ -44,7 +44,7 @@
     position: absolute;
     background-color: #f6f7f0;
     width: 80%;
-    height: 75vh;
+    height: 70vh;
     right: 0;
     z-index: -1;
     max-width: 1080px;
@@ -116,7 +116,7 @@
   }
   & .story__heading {
     position: absolute;
-    top: 93%;
+    top: 87%;
     margin-left: 20px;
     font-size: clamp(1.5rem, -1rem + 7.1vw, 2.2rem);
     letter-spacing: 0.12em;
@@ -150,9 +150,9 @@
   }
   & .story__pic02 {
     position: absolute;
-    top: 61%;
+    top: 57%;
     right: 0;
-    width: 44vw;
+    width: 45vw;
     max-width: 210px;
     height: 22vh;
     overflow: hidden;
@@ -185,7 +185,7 @@
     & img {
       transform: scale(1.04);
       -o-object-position: -6px 50%;
-      object-position: -27px 50%;
+      object-position: -28px 50%;
       @include min(sm) {
         transform: scale(1.06);
         object-position: -42px 50%;
@@ -204,7 +204,7 @@
 
   .story__text {
     position: absolute;
-    top: 150%;
+    top: 144%;
     margin-left: 20px;
     margin-right: 20px;
     @include min(sm) {
