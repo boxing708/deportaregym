@@ -619,13 +619,13 @@ footer {
 @media (width >= 960px) {
   .story {
     padding-top: 150px;
-    padding-bottom: 470px;
+    padding-bottom: 480px;
   }
 }
 @media (width >= 1280px) {
   .story {
     padding-top: 180px;
-    padding-bottom: 560px;
+    padding-bottom: 580px;
   }
 }
 
@@ -656,7 +656,7 @@ footer {
 }
 @media (width >= 1280px) {
   .story__container .story__bg {
-    height: 80vh;
+    height: 83vh;
     max-width: 1600px;
     max-height: 710px;
     margin: 0 auto;
@@ -797,7 +797,7 @@ footer {
 }
 @media (width >= 1280px) {
   .story__container .story__pic02 {
-    top: 100%;
+    top: 106%;
     max-height: 430px;
     height: 430px;
   }
@@ -856,7 +856,7 @@ footer {
 }
 @media (width >= 1280px) {
   .story__container .story__text {
-    top: 150%;
+    top: 154%;
     width: 47%;
     margin-left: 0;
     margin-right: 0;

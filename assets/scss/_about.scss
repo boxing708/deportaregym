@@ -30,11 +30,11 @@
   }
   @include min(md) {
     padding-top: 150px;
-    padding-bottom: 470px;
+    padding-bottom: 480px;
   }
   @include min(la) {
     padding-top: 180px;
-    padding-bottom: 560px;
+    padding-bottom: 580px;
   }
 }
 .story__container {
@@ -57,7 +57,7 @@
       max-height: 680px;
     }
     @include min(la) {
-      height: 80vh;
+      height: 83vh;
       max-width: 1600px;
       max-height: 710px;
       margin: 0 auto;
@@ -172,7 +172,7 @@
       max-height: 320px;
     }
     @include min(la) {
-      top: 100%;
+      top: 106%;
       max-height: 430px;
       height: 430px;
     }
@@ -216,7 +216,7 @@
       top: 148%;
     }
     @include min(la) {
-      top: 150%;
+      top: 154%;
       width: 47%;
       margin-left: 0;
       margin-right: 0;
