@@ -588,8 +588,8 @@ footer {
 
 .about__mv .mv__pic img {
   transform: scale(1.5);
-  -o-object-position: 10% -43px;
-     object-position: 10% -43px;
+  -o-object-position: 14% -30px;
+     object-position: 14% -30px;
 }
 @media (width >= 768px) {
   .about__mv .mv__pic img {
@@ -637,7 +637,7 @@ footer {
   position: absolute;
   background-color: #f6f7f0;
   width: 80%;
-  height: 70vh;
+  height: 67vh;
   right: 0;
   z-index: -1;
   max-width: 1080px;
@@ -727,7 +727,7 @@ footer {
 }
 .story__container .story__heading {
   position: absolute;
-  top: 87%;
+  top: 86%;
   margin-left: 20px;
   font-size: clamp(1.5rem, -1rem + 7.1vw, 2.2rem);
   letter-spacing: 0.12em;
@@ -769,7 +769,7 @@ footer {
 }
 .story__container .story__pic02 {
   position: absolute;
-  top: 57%;
+  top: 55%;
   right: 0;
   width: 45vw;
   max-width: 210px;
@@ -813,7 +813,7 @@ footer {
 .story__container .story__pic02 img {
   transform: scale(1.04);
   -o-object-position: -6px 50%;
-  object-position: -28px 50%;
+  object-position: -29px 50%;
 }
 @media (width >= 768px) {
   .story__container .story__pic02 img {
@@ -838,7 +838,7 @@ footer {
 }
 .story__container .story__text {
   position: absolute;
-  top: 144%;
+  top: 142%;
   margin-left: 20px;
   margin-right: 20px;
 }
