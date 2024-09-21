@@ -697,8 +697,8 @@ main {
     @include min(sm) {
       display: flex;
       align-items: center;
-      justify-content: center;
-      column-gap: 12px;
+      justify-content: space-between;
+      // column-gap: 12px;
     }
     .instagram__item {
       // margin-bottom: 15px;
@@ -712,6 +712,17 @@ main {
       @include min(sm) {
         margin-bottom: 16px;
         display: block;
+      }
+      //インスタ埋め込み widthの設定
+      & .instagram-media {
+        max-width: 100% !important;
+        @include min(sm) {
+          width: clamp(23.8rem, -9rem + 40vw, 31rem) !important;
+          min-width: 0 !important;
+        }
+        @include min(md) {
+          width: clamp(30rem, 3.4rem + 24.1vw, 33.6rem) !important;
+        }
       }
     }
   }
