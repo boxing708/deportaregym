@@ -793,7 +793,12 @@ main {
     .access__item {
       margin-bottom: 24px;
       @include min(sm) {
-        margin-bottom: 32px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      @include min(la) {
+        margin-bottom: 28px;
       }
       .access__item-dt {
         font-size: 1.5rem;
@@ -813,7 +818,7 @@ main {
       height: 242px;
       display: block;
       @include min(sm) {
-        height: 440px;
+        height: 500px;
         width: 48vw;
         max-width: 500px;
       }

@@ -803,12 +803,7 @@ footer {
   }
 }
 .story__container .story__pic02.fadeup {
-  transition-delay: 0.6s;
-}
-@media (width >= 768px) {
-  .story__container .story__pic02.fadeup {
-    transition-delay: 0.8s;
-  }
+  transition-delay: 0.5s;
 }
 .story__container .story__pic02 img {
   transform: scale(1.04);
@@ -863,12 +858,7 @@ footer {
   }
 }
 .story__container .story__text.fadeup {
-  transition-delay: 0.9s;
-}
-@media (width >= 768px) {
-  .story__container .story__text.fadeup {
-    transition-delay: 1s;
-  }
+  transition-delay: 0.8s;
 }
 .story__container .story__text .story__heading-sub {
   position: relative;
@@ -1108,9 +1098,6 @@ footer {
   flex-direction: column;
   margin-bottom: 6px;
 }
-.owner__career .owner__list .owner__item:nth-child(2) {
-  margin-bottom: 0;
-}
 @media (width >= 768px) {
   .owner__career .owner__list .owner__item {
     flex-direction: row;
@@ -1118,16 +1105,16 @@ footer {
          column-gap: 16px;
   }
 }
-.owner__career .owner__list .owner__item span:nth-child(1) {
+.owner__career .owner__list .owner__item.owner__item01 span:nth-child(1), .owner__career .owner__list .owner__item.owner__item02 span:nth-child(1) {
   font-size: 1.3rem;
 }
 @media (width >= 768px) {
-  .owner__career .owner__list .owner__item span:nth-child(1) {
+  .owner__career .owner__list .owner__item.owner__item01 span:nth-child(1), .owner__career .owner__list .owner__item.owner__item02 span:nth-child(1) {
     font-size: 1.2rem;
   }
 }
 @media (width >= 960px) {
-  .owner__career .owner__list .owner__item span:nth-child(1) {
+  .owner__career .owner__list .owner__item.owner__item01 span:nth-child(1), .owner__career .owner__list .owner__item.owner__item02 span:nth-child(1) {
     font-size: 1.3rem;
   }
 }
@@ -1137,12 +1124,16 @@ footer {
 @media (width >= 768px) {
   .owner__career .owner__list .owner__item span:nth-child(2) {
     font-size: 1.1rem;
+    width: 85%;
   }
 }
 @media (width >= 960px) {
   .owner__career .owner__list .owner__item span:nth-child(2) {
     font-size: 1.2rem;
   }
+}
+.owner__career .owner__list .owner__item.owner__item02 {
+  margin-bottom: 0;
 }
 
 .facility {
@@ -1371,7 +1362,7 @@ footer {
 }
 .course__item-top .course__item-bg {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(43, 43, 43, 0.25);
   top: 0;
   left: 0;
   width: 100%;
@@ -2087,20 +2078,21 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.trainer__list .trainer__item .trainer__item-qualification .trainer__item-qualification-inner {
+  display: inline-block;
   font-size: 1.1rem;
-  margin: 0 auto;
   padding: 4px 14px;
-  background-color: rgba(243, 243, 243, 0.8);
+  background-color: rgba(245, 244, 235, 0.8);
   border-radius: 5px;
-  width: 71%;
 }
 @media (width >= 768px) {
-  .trainer__list .trainer__item .trainer__item-qualification {
+  .trainer__list .trainer__item .trainer__item-qualification .trainer__item-qualification-inner {
     font-size: 1rem;
   }
 }
 @media (width >= 1280px) {
-  .trainer__list .trainer__item .trainer__item-qualification {
+  .trainer__list .trainer__item .trainer__item-qualification .trainer__item-qualification-inner {
     font-size: 1.1rem;
   }
 }
@@ -2204,20 +2196,21 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.advisor__list .advisor__item .advisor__item-qualification .advisor__item-qualification-inner {
+  display: inline-block;
   font-size: 1.1rem;
-  margin: 0 auto;
   padding: 4px 14px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
-  width: 71%;
 }
 @media (width >= 768px) {
-  .advisor__list .advisor__item .advisor__item-qualification {
+  .advisor__list .advisor__item .advisor__item-qualification .advisor__item-qualification-inner {
     font-size: 1rem;
   }
 }
 @media (width >= 1280px) {
-  .advisor__list .advisor__item .advisor__item-qualification {
+  .advisor__list .advisor__item .advisor__item-qualification .advisor__item-qualification-inner {
     font-size: 1.1rem;
   }
 }
@@ -3165,8 +3158,13 @@ main {
   margin-bottom: 24px;
 }
 @media (width >= 768px) {
+  .access__inner.flex .access__list .access__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (width >= 1280px) {
   .access__inner.flex .access__list .access__item {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 }
 .access__inner.flex .access__list .access__item .access__item-dt {
@@ -3186,7 +3184,7 @@ main {
 }
 @media (width >= 768px) {
   .access__inner.flex .access__map iframe {
-    height: 440px;
+    height: 500px;
     width: 48vw;
     max-width: 500px;
   }
