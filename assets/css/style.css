@@ -2083,7 +2083,7 @@ footer {
   display: inline-block;
   font-size: 1.1rem;
   padding: 4px 14px;
-  background-color: rgba(245, 244, 235, 0.8);
+  background-color: rgba(243, 243, 243, 0.8);
   border-radius: 5px;
 }
 @media (width >= 768px) {
@@ -2098,7 +2098,7 @@ footer {
 }
 
 .advisor {
-  background-color: #f4f4f4;
+  background-color: #f9f8f1;
   padding-bottom: 60px;
 }
 @media (width >= 768px) {
@@ -2201,7 +2201,7 @@ footer {
   display: inline-block;
   font-size: 1.1rem;
   padding: 4px 14px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   border-radius: 5px;
 }
 @media (width >= 768px) {
@@ -3132,7 +3132,7 @@ main {
 }
 @media (width >= 1280px) {
   .access__inner.flex .access__list {
-    padding-top: 24px;
+    padding-top: 8px;
   }
 }
 .access__inner.flex .access__list .access__item0 {
@@ -3187,5 +3187,6 @@ main {
     height: 500px;
     width: 48vw;
     max-width: 500px;
+    margin-top: 24px;
   }
 }

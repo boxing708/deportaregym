@@ -81,7 +81,7 @@
         display: inline-block;
         font-size: 1.1rem;
         padding: 4px 14px;
-        background-color: rgba(245, 244, 235, 0.8);
+        background-color: rgba(243, 243, 243, 0.8);
         border-radius: 5px;
         @include min(sm) {
           font-size: 1rem;
@@ -96,7 +96,7 @@
 
 //advisor{
 .advisor {
-  background-color: #f4f4f4;
+  background-color: #f9f8f1;
   padding-bottom: 60px;
   @include min(sm) {
     padding-bottom: 80px;
@@ -185,7 +185,7 @@
         display: inline-block;
         font-size: 1.1rem;
         padding: 4px 14px;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: #fff;
         border-radius: 5px;
         @include min(sm) {
           font-size: 1rem;

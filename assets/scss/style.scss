@@ -771,7 +771,7 @@ main {
       width: 40vw;
     }
     @include min(la) {
-      padding-top: 24px;
+      padding-top: 8px;
     }
     .access__item0 {
       position: relative;
@@ -805,6 +805,7 @@ main {
         font-weight: 600;
         margin-bottom: 6px;
       }
+
       .access__item-dd {
         font-size: 1.4rem;
         & .access__item-dd-small {
@@ -821,6 +822,7 @@ main {
         height: 500px;
         width: 48vw;
         max-width: 500px;
+        margin-top: 24px;
       }
     }
   }
