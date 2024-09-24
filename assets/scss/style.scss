@@ -771,7 +771,7 @@ main {
       width: 40vw;
     }
     @include min(la) {
-      padding-top: 24px;
+      padding-top: 8px;
     }
     .access__item0 {
       position: relative;
@@ -793,13 +793,19 @@ main {
     .access__item {
       margin-bottom: 24px;
       @include min(sm) {
-        margin-bottom: 32px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      @include min(la) {
+        margin-bottom: 28px;
       }
       .access__item-dt {
         font-size: 1.5rem;
         font-weight: 600;
         margin-bottom: 6px;
       }
+
       .access__item-dd {
         font-size: 1.4rem;
         & .access__item-dd-small {
@@ -813,9 +819,10 @@ main {
       height: 242px;
       display: block;
       @include min(sm) {
-        height: 440px;
+        height: 500px;
         width: 48vw;
         max-width: 500px;
+        margin-top: 24px;
       }
     }
   }
