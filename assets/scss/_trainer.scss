@@ -44,8 +44,38 @@
     list-style: none;
     margin-bottom: 50px;
     @include min(sm) {
-      width: clamp(23rem, 3.434rem + 24.1vw, 32rem);
+      width: clamp(23rem, 3.434rem + 26.1vw, 32rem);
       margin-bottom: 70px;
+    }
+    & .trainer__item-relative {
+      position: relative;
+      & .trainer__item-personal-btn {
+        position: absolute;
+        width: 27vw;
+        top: 6%;
+        right: 2%;
+        transition: all 0.3s;
+        @include min(sm) {
+          width: 10vw;
+          max-width: 102px;
+        }
+        &.poyopoyo {
+          animation: poyopoyo 2s ease-out infinite;
+          opacity: 1;
+          @keyframes poyopoyo {
+            0%,
+            40%,
+            60%,
+            80% {
+              transform: scale(1);
+            }
+            50%,
+            70% {
+              transform: scale(0.95);
+            }
+          }
+        }
+      }
     }
     &:last-child {
       margin-bottom: 0;
